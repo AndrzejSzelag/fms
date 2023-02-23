@@ -17,7 +17,7 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 JSF 2.3
 * 🔶 Lombok 1.18.24
 * 🔶 BootsFaces 1.5.0
-* 🔶 PrimeFaces 12.0.0
+* 🔶 PrimeFaces 10.0.0
 
 
 ### Environment
