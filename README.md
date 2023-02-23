@@ -4,10 +4,6 @@
 #### Project "Faults Management System" from Lodz University of Technology | Modern Business Application Java/Jakarta EE postgraduate degree
 
 
-Website of postgraduate studies "Modern Java/Jakarta EE business applications":
-http://java-podyplomowe.it.p.lodz.pl/
-
-
 ### Tech Stack
 * 🔶 Java 11.0.9 LTS
 * 🔶 CDI 2.0
