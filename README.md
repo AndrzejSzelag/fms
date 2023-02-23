@@ -20,11 +20,11 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 PrimeFaces 10.0.0
 
 ### Environment
+* 🔶 Apache NetBeans IDE 12.6
+* 🔶 Apache Maven 3.8.1
 * 🔶 Java EE 8
-* 🔶 Apache NetBeans IDE 12.6.
-* 🔶 Apache Maven 3.8.1.
-* 🔶 Payara Server 5.2021.6.
-* 🔶 Apache Derby 10.14.2.0.
+* 🔶 Payara Server 5.2021.6
+* 🔶 Apache Derby 10.14.2.0
 
 
 # Coming Soon
