@@ -15,15 +15,15 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 JTA 1.2
 * 🔶 JPA 2.2
 * 🔶 JSF 2.3
-* 🔶 Lombok 1.18.20
+* 🔶 Lombok 1.18.24
 * 🔶 BootsFaces 1.5.0
-* 🔶 PrimeFaces 10.0.0
+* 🔶 PrimeFaces 12.0.0
 
 
 ### Environment
-* 🔶 Apache NetBeans IDE 12.6
-* 🔶 Apache Maven 3.8.1
-* 🔶 Java EE 8
+* 🔶 Apache NetBeans IDE 16
+* 🔶 Apache Maven 3.8.6
+* 🔶 Java EE 8.0.1
 * 🔶 Payara Server 5.2021.6
 * 🔶 Apache Derby 10.14.2.0
 
