@@ -16,3 +16,5 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 Lombok 1.18.20
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
+
+# Coming Soon
