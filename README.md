@@ -13,7 +13,7 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 CDI 2.0
 * 🔶 EJB 3.2
 * 🔶 JTA 1.2
-* 🔶 JPA 2.2.1
+* 🔶 JPA 2.2
 * 🔶 JSF 2.3
 * 🔶 Lombok 1.18.24
 * 🔶 BootsFaces 1.5.0
