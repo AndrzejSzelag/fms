@@ -19,6 +19,7 @@ http://java-podyplomowe.it.p.lodz.pl/
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
 
+
 ### Environment
 * 🔶 Apache NetBeans IDE 12.6
 * 🔶 Apache Maven 3.8.1
