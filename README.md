@@ -1,4 +1,4 @@
-# Faults Managenemt System
+# FMS (Faults Managenemt System)
 
 
 #### Project "Faults Management System" from Lodz University of Technology | Modern Business Application Java/Jakarta EE postgraduate degree
