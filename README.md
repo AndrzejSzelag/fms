@@ -1,7 +1,7 @@
 # FMS (Faults Managenemt System)
 
 
-#### Project "Faults Management System" from Lodz University of Technology | Modern Business Application Java/Jakarta EE postgraduate degree
+#### Project "Faults Management System" from Lodz University of Technology in Lodz | Modern Business Application Java/Jakarta EE postgraduate degree
 
 
 ### Tech Stack
@@ -17,7 +17,7 @@
 
 
 ### Environment
-* 🔶 Apache NetBeans IDE 16
+* 🔶 Apache NetBeans IDE 17
 * 🔶 Apache Maven 3.8.6
 * 🔶 Java EE 8.0.1
 * 🔶 Payara Server 5.2021.6
