@@ -5,7 +5,7 @@
 
 
 ### Tech Stack
-* 🔶 Java 11.0.9 LTS
+* 🔶 Java 17.0.6 LTS
 * 🔶 CDI 2.0
 * 🔶 EJB 3.2
 * 🔶 JTA 1.2
