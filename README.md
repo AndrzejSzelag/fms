@@ -21,7 +21,7 @@
 * 🔶 Apache Maven 3.8.6
 * 🔶 Java EE 8.0.1
 * 🔶 Payara Server 5.2021.6
-* 🔶 Apache Derby 10.14.2.0
+* 🔶 Oracle Database 21c Express Edition
 
 
 ## Coming Soon
