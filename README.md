@@ -8,10 +8,10 @@
 * 🔶 Java 17.0.6 LTS
 * 🔶 CDI 2.0
 * 🔶 EJB 3.2
-* 🔶 JTA 1.2
 * 🔶 JPA 2.2
-* 🔶 JSF 2.3
+* 🔶 JTA 1.2
 * 🔶 Lombok 1.18.24
+* 🔶 JSF 2.3
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
 
