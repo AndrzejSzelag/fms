@@ -1,9 +1,5 @@
 # FMS (Faults Managenemt System)
 
-
-#### Project "Faults Management System" from Lodz University of Technology in Lodz | Modern Business Application Java/Jakarta EE postgraduate degree
-
-
 ### Tech Stack
 * 🔶 Java 17.0.6 LTS
 * 🔶 CDI 2.0
