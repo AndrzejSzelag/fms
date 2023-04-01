@@ -1,4 +1,4 @@
-# FMS (Faults Management System)
+# FMS (Faults Management System) ❤️
 
 ### Tech Stack
 * 🔶 Java 17.0.6 LTS
