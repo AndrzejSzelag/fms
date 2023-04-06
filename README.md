@@ -1,4 +1,4 @@
-# FMS (Fault Management System) ❤️
+# FMS (Fault Management System)
 ### IT System for Managing Control System Faults on the Mining Railways
 
 ### Tech Stack
