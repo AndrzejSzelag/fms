@@ -5,9 +5,9 @@
 * 🔶 Java 17.0.6 LTS
 * 🔶 Java Persistence API 2.2
 * 🔶 Java Transaction API 1.2
-* 🔶 JavaServer Faces 2.3
 * 🔶 Context Dependency Injection 2.0
 * 🔶 Enterprice JavaBeans 3.2
+* 🔶 JavaServer Faces 2.3
 * 🔶 Lombok 1.18.24
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
