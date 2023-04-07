@@ -3,11 +3,11 @@
 
 ### Tech Stack
 * 🔶 Java 17.0.6 LTS
-* 🔶 JPA 2.2
-* 🔶 JTA 1.2
-* 🔶 JSF 2.3
-* 🔶 CDI 2.0
-* 🔶 EJB 3.2
+* 🔶 Java Persistence API 2.2
+* 🔶 Java Transaction API 1.2
+* 🔶 JavaServer Faces 2.3
+* 🔶 Context Dependency Injection 2.0
+* 🔶 Enterprice JavaBeans 3.2
 * 🔶 Lombok 1.18.24
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
