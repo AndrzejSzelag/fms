@@ -17,7 +17,7 @@
 * 🔶 Java EE 8.0.1
 * 🔶 Apache Maven 3.8.6
 * 🔶 Payara Server 5.2021.6
-* 🔶 Oracle Database 21c Express Edition Release 21.0.0.0.0
+* 🔶 Oracle Database 21c Express Edition
 * 🔶 Apache NetBeans IDE 17
 
 
