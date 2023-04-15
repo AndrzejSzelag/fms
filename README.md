@@ -9,7 +9,7 @@
 * 🔶 Enterprise JavaBeans 3.2
 * 🔶 JavaServer Faces 2.3
 * 🔶 Lombok 1.18.24
-* 🔶 BootsFaces 1.4.2
+* 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
 
 
