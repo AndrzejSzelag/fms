@@ -11,6 +11,7 @@ target/
 
 ### NetBeans ###
 /nbproject/private/
+build/
 /build/
 /nbbuild/
 /dist/
@@ -18,6 +19,22 @@ target/
 /.nb-gradle/
 nbactions.xml
 nb-configuration.xml
+!**/src/main/**/build/
+!**/src/test/**/build/
 siteDeployment/
 
+### VS Code ###
+.vscode/
+/.jpb/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
 *.zip
+*.doc
