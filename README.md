@@ -63,7 +63,7 @@
     
     > Example
     > 
-    > ![cmd2.png](cmd2.png)
+    > __git clone https://github.com/AndrzejSzelag/fms.git__
     
 11. In __D:\fms__ folder run __mvn clean install__ command.
 12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__:
