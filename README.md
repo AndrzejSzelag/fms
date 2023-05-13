@@ -49,7 +49,7 @@
     > ![cmd1.png](cmd1.png)
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
-8. Start default domain on the __Payara Server 5.2021.10__ using __asadmin__ utility with __start-domain__ subcommand.
+8. Start default domain on the __Payara Server 5.2021.10__ using __asadmin__ utility with the __start-domain__ subcommand.
 
     > Example
     > 
@@ -66,14 +66,14 @@
     > ![cmd2.png](cmd2.png)
     
 11. In command line Windows, move to __D:\fms__ folder, and run __mvn clean install__ command.
-12. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file to __Payara Server 5.2021.10__.
+12. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on __Payara Server 5.2021.10__.
 
     > Example
     > 
     > ![cmd3.png](cmd3.png)
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ FMS application folder.
-15. In your Web browser use URL: __https://localhost:8181/FMS__.
+15. In your Web browser use __https://localhost:8181/FMS__.
 16. Click on __Advanced__.
 
     > Example
