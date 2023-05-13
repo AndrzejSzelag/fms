@@ -35,7 +35,7 @@
 5. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 
     > #### IMPORTANT
-    > You must copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
+    > Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
@@ -44,7 +44,7 @@
 11. From __fms\target__ folder deploy __FMS-1.0.war__ file to the __Payara Server 5.2021.10__ (you can use __asadmin deploy__ command).
 
     > #### IMPORTANT
-    > You must run __data.sql__ file from __\fms\src\main\resources__ folder!
+    > Run __data.sql__ file from __\fms\src\main\resources__ folder!
 
 13. In your Web browser use URL: __https://localhost:8181/FMS__.
 
