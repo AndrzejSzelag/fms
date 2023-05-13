@@ -49,7 +49,7 @@
     * From Github Repository, click on Clone
     * Copy the clone URL
     * In command line Windows, move to partition __D:__ 
-    * Use the git clone command along with the copied URL
+    * Use the git clone command along with the copied URL:
 
     ![cmd2.java](cmd2.png)
 
