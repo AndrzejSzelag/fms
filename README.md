@@ -68,7 +68,7 @@
     > 
     > ![cmd3.png](cmd3.png)
 
-14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __\fms\src\main\resources__ FMS application folder.
+14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ FMS application folder.
 15. In your Web browser use URL: __https://localhost:8181/FMS__.
 16. Click on __Advanced__.
 
