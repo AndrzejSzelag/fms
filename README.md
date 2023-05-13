@@ -91,4 +91,4 @@
 
 👉 FMS is my first web-based business application in the Java programming language, which summarizes the knowledge I gained in the postgraduate course "Modern Java/Jacarta EE business applications" at the Technical University of Lodz. This application has cost me a lot of work, although I realize that there is still a lot to improve.
 
-👉 This application was created with using [__Apache Maven__](https://maven.apache.org/) and __Java EE__ technology with many different standards, such as __JPA__, __JTA__, __EJB__, __CDI__, __JSF__ etc. It also uses the advanced [__Oracle Database XE__](https://www.oracle.com/pl/database/technologies/appdev/xe.html) and [__Payara__] (https://www.payara.fish/) application server.
+👉 This application was created with using [__Apache Maven__](https://maven.apache.org/) and __Java EE__ technology with many different standards, such as __JPA__, __JTA__, __EJB__, __CDI__, __JSF__ etc. It also uses the advanced [__Oracle Database XE__](https://www.oracle.com/pl/database/technologies/appdev/xe.html) and [__Payara__](https://www.payara.fish/) application server.
