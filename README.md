@@ -49,8 +49,13 @@
     > ![cmd1.png](cmd1.png)
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
-8. Verify if __Payara Server 5.2021.10__ runs.
-9. Clone a Github Repository:
+8. Run __Payara Server 5.2021.10__:
+
+    > Example
+    > 
+    > ![cmd4.java](cmd4.png)
+
+10. Clone a Github Repository:
    * From Github Repository, click on __Clone__
    * Copy the clone URL
    * In command line Windows, move to partition __D:__ 
