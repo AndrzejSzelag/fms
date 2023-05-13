@@ -76,7 +76,9 @@
 15. In your Web browser use URL: __https://localhost:8181/FMS__.
 16. Click on button __Advanced__.
 
-![url1.java](url1.png)
+    > Example
+    > 
+    > ![url1.java](url1.png)
 
 17. Click on link __Continue to local (unsafe)__. You should see the main page FMS application (tip: first photo).
 
