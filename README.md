@@ -31,7 +31,10 @@
 1. Log into __Windows 11 Pro__ with a user that is a direct member of the Administrators group.
 2. Download __Java 17.0.6 LTS__ and install to a local directory.
 3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory.
-4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run setup.exe. After instalation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
+4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run setup.exe. 
+
+    > #### IMPORTANT
+    > After instalation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
 
     ![DataSource.java](DataSource.png)
 
