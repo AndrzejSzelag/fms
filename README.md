@@ -53,7 +53,7 @@
 
     ![cmd2.java](cmd2.png)
 
-11. From __D:\fms__ folder use __mvn clean install__ command.
+11. Into __D:\fms__ folder use __mvn clean install__ command.
 12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__.
 
     > #### IMPORTANT
