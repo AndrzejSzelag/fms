@@ -36,7 +36,7 @@
 6. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to Payara Server (__lib__ folder).
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
-9. Use__git clone https://github.com/AndrzejSzelag/fms.git__ command. 
+9. Use __git clone https://github.com/AndrzejSzelag/fms.git__ command. 
 10. From __fms__ folder use __mvn clean install__ command.
 11. From __fms\target__ folder deploy __FMS-1.0.war__ file to the __Payara Server 5.2021.10__ (you can use __asadmin deploy__ command).
 
