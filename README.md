@@ -32,7 +32,11 @@
 2. Download __Java 17.0.6 LTS__ and install to a local directory.
 3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory.
 4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run setup.exe. After instalation create schema, user account and password - you will need this data in the DataSource.java class.
-5. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
+
+![DataSource.java](/assets/images/DataSource.png)
+
+
+6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 
     > #### IMPORTANT
     > Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
