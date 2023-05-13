@@ -20,7 +20,7 @@
 * 🔶 Apache Maven 3.8.6
 * 🔶 Payara Server 5.2021.10
 * 🔶 Oracle Database 21c Express Edition
-* 🔶 Apache NetBeans IDE 17
+* 🔶 IntelliJ IDEA 2023.1.1
 
 
 ### Video
