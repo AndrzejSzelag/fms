@@ -8,7 +8,11 @@
 * 🔶 Context and Dependency Injection 2.0
 * 🔶 Enterprise JavaBeans 3.2
 * 🔶 JavaServer Faces 2.3
+<<<<<<< HEAD
 * 🔶 Lombok 1.18.26
+=======
+* 🔶 Lombok 1.18.24
+>>>>>>> ffc138110dc00187ac41e59b2c0ceccfd73c721f
 * 🔶 BootsFaces 1.5.0
 * 🔶 PrimeFaces 10.0.0
 
@@ -18,4 +22,11 @@
 * 🔶 Apache Maven 3.8.6
 * 🔶 Payara Server 5.2021.10
 * 🔶 Oracle Database 21c Express Edition
+<<<<<<< HEAD
 * 🔶 Apache NetBeans IDE 17
+=======
+* 🔶 Apache NetBeans IDE 17
+
+
+### Coming Soon
+>>>>>>> ffc138110dc00187ac41e59b2c0ceccfd73c721f

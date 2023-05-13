@@ -1,4 +1,10 @@
 target/
+<<<<<<< HEAD
+=======
+/target/
+*/target/**
+!.mvn/wrapper/maven-wrapper.jar
+>>>>>>> ffc138110dc00187ac41e59b2c0ceccfd73c721f
 
 ### IntelliJ IDEA ###
 .idea
@@ -7,6 +13,35 @@ target/
 *.ipr
 
 ### NetBeans ###
+<<<<<<< HEAD
 nbproject/private/
+=======
+/nbproject/private/
+build/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+>>>>>>> ffc138110dc00187ac41e59b2c0ceccfd73c721f
 nbactions.xml
 nb-configuration.xml
+!**/src/main/**/build/
+!**/src/test/**/build/
+siteDeployment/
+
+### VS Code ###
+.vscode/
+/.jpb/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+*.zip
+*.doc
