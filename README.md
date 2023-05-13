@@ -54,7 +54,7 @@
     ![cmd2.java](cmd2.png)
 
 11. From __D:\fms__ folder use __mvn clean install__ command.
-12. From __D:\fms\target__ folder deploy __FMS-1.0.war__ file to __Payara Server 5.2021.10__ (you can use __asadmin deploy__ command).
+12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__:
 
     > #### IMPORTANT
     > In __Oracle Database 21c Express Edition__ run __data.sql__ file from __\fms\src\main\resources__ folder!
