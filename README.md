@@ -40,7 +40,8 @@ import javax.annotation.sql.DataSourceDefinition;
 import javax.ejb.Singleton;
 import java.sql.Connection;
 
-`code`@Singleton
+`code`
+@Singleton
 @DataSourceDefinition(
         name = "java:app/jdbc/FMSDescriptorDS",
         className = "oracle.jdbc.OracleDriver",
@@ -49,7 +50,8 @@ import java.sql.Connection;
         password = "<DATABASE_PASSWORD>",
         isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
 public class DataSource {
-}`code`
+}
+`code`
 
 5. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 
