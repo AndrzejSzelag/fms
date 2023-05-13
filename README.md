@@ -66,7 +66,7 @@
     > ![cmd2.png](cmd2.png)
     
 11. In command line Windows, move to __D:\fms__ folder, and run __mvn clean install__ command.
-12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__.
+12. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file to __Payara Server 5.2021.10__.
 
     > Example
     > 
