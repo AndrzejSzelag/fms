@@ -46,10 +46,10 @@
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
 9. Clone a Github Repository:
-  * From Github Repository, click on Clone
-  * Copy the clone URL
-  * In command line Windows, move to partition __D:__ 
-  * Use the git clone command along with the copied URL:
+   * From Github Repository, click on Clone
+   * Copy the clone URL
+   * In command line Windows, move to partition __D:__ 
+   * Use the git clone command along with the copied URL:
 
     ![cmd2.java](cmd2.png)
 
