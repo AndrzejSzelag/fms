@@ -33,10 +33,8 @@
 3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory.
 4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run setup.exe. After instalation create schema, user account and password - you will need this data in the DataSource.java class.
 5. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
-
   > #### IMPORTANT
   > - You must copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
-
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
 9. Use __git clone https://github.com/AndrzejSzelag/fms.git__ command. 
