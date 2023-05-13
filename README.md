@@ -35,8 +35,7 @@
 
     > #### IMPORTANT
     > After instalation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
-
-    ![DataSource.java](DataSource.png)
+    > ![DataSource.java](DataSource.png)
 
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder).
