@@ -45,7 +45,7 @@
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
-9. Run command:
+9. Clone this repository:
 
     ![cmd2.java](cmd2.png)
 
