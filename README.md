@@ -37,12 +37,12 @@
 
     > #### IMPORTANT
     > 
-    > After installation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
+    > After installation create a new schema, user account and password - you will need this data in __DataSource.java__:
     > 
     > ![DataSource.png](DataSource.png)
 
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory  (e.g. __C:\Politechnika\payara__).
-7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder).
+7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server 5.2021.10__ (__lib__ folder).
 
     > Example
     > 
@@ -74,13 +74,13 @@
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ FMS application folder.
 15. In your Web browser use URL: __https://localhost:8181/FMS__.
-16. Click on button __Advanced__.
+16. Click on __Advanced__.
 
     > Example
     > 
     > ![url1.java](url1.png)
 
-17. Click on link __Continue to local (unsafe)__. You should see the main page FMS application (tip: first photo).
+17. Click on __Continue to local (unsafe)__. You should see the main page application (tip: first photo).
 
     > Example
     > 
