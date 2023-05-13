@@ -45,7 +45,7 @@
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
-9. Run __git clone https://github.com/AndrzejSzelag/fms.git__ command:
+9. Run command:
 
     ![cmd2.java](cmd2.png)
 
