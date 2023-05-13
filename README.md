@@ -70,11 +70,11 @@
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ FMS application folder.
 15. In your Web browser use URL: __https://localhost:8181/FMS__.
-16. Click on __Advanced__.
+16. Click on button __Advanced__.
 
 ![url1.java](url1.png)
 
-17. Click on __Continue to local (unsafe)__. You should see the main page FMS application.
+17. Click on link __Continue to local (unsafe)__. You should see the main page FMS application.
 
 ![url2.java](url2.png)
 
