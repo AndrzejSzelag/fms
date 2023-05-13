@@ -74,7 +74,7 @@
 
 ![url1.java](url1.png)
 
-17. Click on link __Continue to local (unsafe)__. You should see the main page FMS application.
+17. Click on link __Continue to local (unsafe)__. You should see the main page FMS application (tip: first photo).
 
 ![url2.java](url2.png)
 
