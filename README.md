@@ -74,14 +74,9 @@
 
 ![url1.java](url1.png)
 
-17. Click on __Continue to local (unsafe)__
+17. Click on __Continue to local (unsafe)__. You should see the main page FMS application.
 
 ![url2.java](url2.png)
-
-
-Fault Management System - main page.
-
-![url3.java](url3.png)
 
 ### Description
 
