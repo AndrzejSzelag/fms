@@ -36,10 +36,8 @@
     ![DataSource.java](DataSource.png)
 
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
-
-    > #### IMPORTANT
-    > Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
-    > 
+7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
+    
     > #### EXAMPLE
     > ![cmd1.png](cmd1.png)
 
