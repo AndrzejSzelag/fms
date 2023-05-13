@@ -25,7 +25,7 @@
 
 ### Video
 
-🚀 ... 
+🚀 Comming Soon
 
 
 ### Requirements
@@ -80,4 +80,4 @@
 
 ### Description
 
-...
+Comming Soon
