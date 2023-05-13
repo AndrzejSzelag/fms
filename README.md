@@ -34,6 +34,7 @@
 4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run setup.exe. 
 
     > #### IMPORTANT
+    > 
     > After instalation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
     > 
     > ![DataSource.java](DataSource.png)
@@ -42,6 +43,7 @@
 7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder).
 
     > Example
+    > 
     > ![cmd1.png](cmd1.png)
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
@@ -53,12 +55,14 @@
    * Use the git clone command along with the copied URL:
     
     > Example
+    > 
     > ![cmd2.java](cmd2.png)
 
 11. Into __D:\fms__ folder run __mvn clean install__ command.
 12. Deploy __D:\fms\target\FMS-1.0.war__ file on __Payara Server 5.2021.10__:
 
     > Example
+    >
     > ![cmd3.png](cmd3.png)
 
 14. In __Oracle Database 21c Express Edition__ run __data.sql__ file from __\fms\src\main\resources__ folder.
