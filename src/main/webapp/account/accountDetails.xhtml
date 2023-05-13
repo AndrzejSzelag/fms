@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="accountList" immediate="true">
+                <div class="icon_menu"><em class="pi pi-caret-left"></em>&nbsp;&nbsp;#{msg['action.backToAccountList']}</div>
+            </b:commandLink>            
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <b:growl class="info_message" placementFrom="top" animation-enter="animated bounceInDown" animation-exit="animated flipOutX" allowDismiss="true" escape="true" />            
+            <h:form id="form">
+                <b:panel style="position: absolute; margin: 0 150px; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <b:message for="infoForm" style="font-weight: bolder;" showIcon="true" />
+                    <f:facet name="heading">
+                        <em class="pi pi-id-card"></em>&nbsp;#{msg["menu.accounts.details"]}
+                    </f:facet>
+                    <f:subview id="details" rendered="#{not empty accountDetails.accountDtoDetails.login}">   
+                        <div class="output_label_box">
+                            <h:outputText value="#{msg['account.login']}" class="outputLabelLeft" />    
+                            <h:outputLabel value="#{accountDetails.accountDtoDetails.login}" class="output_label_right"></h:outputLabel>
+                            <h:outputText value="#{msg['account.type']}" class="outputLabelLeft" />
+                            <div>
+                                <h:outputLabel rendered="#{accountDetails.accountDtoDetails.type eq 'Administrator'}" class="output_label_right">#{msg['account.type.administrator']}</h:outputLabel>
+                                <h:outputLabel rendered="#{accountDetails.accountDtoDetails.type eq 'Supervision'}" class="output_label_right">#{msg['account.type.supervision']}</h:outputLabel>                       
+                                <h:outputLabel rendered="#{accountDetails.accountDtoDetails.type eq 'Electrician'}" class="output_label_right">#{msg['account.type.electrician']}</h:outputLabel>
+                            </div>
+                            <h:outputText value="#{msg['account.firstName']}" class="outputLabelLeft" />
+                            <h:outputLabel value="#{accountDetails.accountDtoDetails.firstName}" class="output_label_right"></h:outputLabel>
+                            <h:outputText value="#{msg['account.lastName']}"  class="outputLabelLeft" />
+                            <h:outputLabel value="#{accountDetails.accountDtoDetails.lastName}" class="output_label_right"></h:outputLabel>
+                            <h:outputText value="#{msg['account.phone']}" class="outputLabelLeft" />
+                            <h:outputLabel value="#{accountDetails.accountDtoDetails.phone}" class="output_label_right"></h:outputLabel>
+                            <c:if test="#{accountDetails.administrator}">
+                                <h:outputText value="#{msg['account.alarmphone']}" class="outputLabelLeft" />    
+                                <h:outputLabel value="#{accountDetails.accountDtoDetails.alarmPhone}" class="output_label_right"></h:outputLabel>                       
+                            </c:if>
+                            <c:if test="#{accountDetails.supervision or accountDetails.electrician}">
+                                <h:outputText value="#{msg['account.department']}" class="outputLabelLeft" />    
+                                <h:outputLabel value="#{accountDetails.accountDtoDetails.department}" class="output_label_right"></h:outputLabel>                       
+                            </c:if>  
+                            <h:outputText value="#{msg['account.confirmed']}" class="outputLabelLeft" />
+                            <h:outputLabel style="color: red;" rendered="#{not accountDetails.accountDtoDetails.confirmed}" class="output_label_right">
+                                <em class="pi pi-times-circle icon"></em>&nbsp;#{msg['account.confirmed.no']}
+                            </h:outputLabel>
+                            <h:outputLabel style="color: green;" rendered="#{accountDetails.accountDtoDetails.confirmed}" class="output_label_right">
+                                <em class="pi pi-check-circle icon"></em>&nbsp;#{msg['account.confirmed.yes']}
+                            </h:outputLabel>
+                            <h:outputText value="#{msg['account.activated']}" class="outputLabelLeft" />
+                            <h:outputLabel style="color: red;" rendered="#{not accountDetails.accountDtoDetails.activated}" class="output_label_right">
+                                <em class="pi pi-times-circle icon"></em>&nbsp;#{msg['account.activated.no']}
+                            </h:outputLabel>
+                            <h:outputLabel style="color: green;" rendered="#{accountDetails.accountDtoDetails.activated}" class="output_label_right">
+                                <em class="pi pi-check-circle icon"></em>&nbsp;#{msg['account.activated.yes']}
+                            </h:outputLabel>
+                        </div>
+                    </f:subview>
+                    <br />
+                    <b:buttonToolbar>
+                        <b:buttonGroup>
+                            <b:commandButton id="infoForm" action="accountList" immediate="true" tooltip="#{msg['action.close']}">
+                                <div class="icon_menu"><em class="pi pi-power-off"></em>&nbsp;&nbsp;#{msg['action.close']}</div>
+                            </b:commandButton> 
+                        </b:buttonGroup>
+                    </b:buttonToolbar>
+                </b:panel>
+            </h:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

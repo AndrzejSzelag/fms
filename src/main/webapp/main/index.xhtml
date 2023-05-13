@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                template="../templates/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <ui:include src="../templates/menu.xhtml" />
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="true">
+            <b:jumbotron style="background: transparent; color: #555555">
+                <div style="padding-bottom: 20px;">                        
+                    <h1>#{msg['app.name']}</h1>
+                </div>
+                <div style="padding-bottom: 20px;">
+                    <h2>#{msg["main.page.intro"]}</h2>
+                </div>
+                <div style="padding-bottom: 60px;">
+                    <h3>#{msg["main.page.author"]}</h3>
+                </div>
+                <f:subview id="subviewGuests" rendered="#{empty request.remoteUser}">
+                    <h:form id="formGuests">
+                        <div class="register_question"><em class="pi pi-link icon"></em>&nbsp;#{msg['action.register.question']}
+                            <b:commandLink action="registerAccount" tooltip="#{msg['action.register.here']}"><div class="register_here">#{msg['action.register.here']}</div></b:commandLink> 
+                        </div>                    
+                    </h:form>
+                    <h:form id="registerForm">
+                        <div class="login_question "><em class="pi pi-link icon"></em>&nbsp;#{msg['action.login.question']}                        
+                            <b:commandLink action="login" tooltip="#{msg['action.login.here']}"><div class="login_here">#{msg['action.login.here']}</div></b:commandLink> 
+                        </div>
+                    </h:form>
+                </f:subview>
+            </b:jumbotron>
+        </b:container>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">                    
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="true">
+            <b:growl class="info_message" placementFrom="top" animation-enter="animated bounceInDown" animation-exit="animated flipOutX" allowDismiss="true" escape="true" />
+            <h:form id="form">
+                <b:panel style="position: absolute; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <b:message for="infoForm" style="font-weight: bolder;" showIcon="true" />
+                    <f:facet name="heading">
+                        <em class="pi pi-users"></em>&nbsp;#{msg["menu.accounts.list"]}
+                    </f:facet>
+                    <b:dataTable id="dtAccounts" style="top" var="record" value="#{accountList.accountDtoList}" fixedHeader="true" striped="false" 
+                                 rowHighlight="true" paginated="true" pageLength="10" pageLengthMenu="7,10,13" excel="true" pdf="true" print="true" border="false">
+                        <f:facet name="header">
+                            <th id="account_login">#{msg['account.login']}</th>
+                            <th id="account_first_name">#{msg['account.firstName']}</th>
+                            <th id="account_last_name">#{msg['account.lastName']}</th>
+                            <th id="account_type">#{msg['account.type']}</th>
+                            <th id="account_activated">#{msg['account.activated']}</th>
+                            <th id="account_confirmed">#{msg['account.confirmed']}</th>
+                            <th id="general_actions">#{msg['general.actions']}</th>
+                        </f:facet>
+                        <b:dataTableColumn>#{record.login}</b:dataTableColumn>
+                        <b:dataTableColumn>#{record.firstName}</b:dataTableColumn>
+                        <b:dataTableColumn>#{record.lastName}</b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <h:outputLabel class="type_account_center_administrator" rendered="#{record.type eq 'Administrator'}"><em class="pi pi-user"></em>&nbsp;#{msg['account.type.administrator']}</h:outputLabel>
+                            <h:outputLabel class="type_account_center_supervision" rendered="#{record.type eq 'Supervision'}"><em class="pi pi-user"></em>&nbsp;#{msg['account.type.supervision']}</h:outputLabel>
+                            <h:outputLabel class="type_account_center_electrician" rendered="#{record.type eq 'Electrician'}"><em class="pi pi-user"></em>&nbsp;#{msg['account.type.electrician']}</h:outputLabel>
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <h:outputLabel style="color: red;" class="icon_center" rendered="#{not record.activated}"><em class="pi pi-times-circle"></em>&nbsp;#{msg['account.activated.no']}</h:outputLabel>
+                            <h:outputLabel style="color: green;" class="icon_center" rendered="#{record.activated}"><em class="pi pi-check-circle"></em>&nbsp;#{msg['account.activated.yes']}</h:outputLabel>
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <h:outputLabel style="color: red;" class="icon_center" rendered="#{not record.confirmed}"><em class="pi pi-times-circle"></em>&nbsp;#{msg['account.confirmed.no']}</h:outputLabel>
+                            <h:outputLabel style="color: green" class="icon_center" rendered="#{record.confirmed}"><em class="pi pi-check-circle"></em>&nbsp;#{msg['account.confirmed.yes']}</h:outputLabel>                               
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <b:commandButton action="#{confirmAccount.confirmAccount(record)}" look="warning" rendered="#{not record.confirmed}" tooltip="#{msg['action.confirm.account']}">
+                                <div class="icon_menu"><em class="pi pi-thumbs-up"></em></div>
+                            </b:commandButton> 
+                            <b:commandButton action="#{activateAccount.activateAccount(record)}" look="warning" rendered="#{not record.activated}" tooltip="#{msg['action.activate.account']}">
+                                <div class="icon_menu"><em class="pi pi-lock"></em></div>
+                            </b:commandButton>
+                            <b:commandButton action="#{deactivateAccount.deactivateAccount(record)}" rendered="#{record.activated}" tooltip="#{msg['action.deactivate.account']}">
+                                <div class="icon_menu"><em class="pi pi-lock-open"></em></div>
+                            </b:commandButton>                            
+                            <b:commandButton action="#{accountDetails.downloadAccountDetails(record)}" tooltip="#{msg['action.details.account']}">
+                                <div class="icon_menu"><em class="pi pi-id-card"></em></div>
+                            </b:commandButton>
+                            <b:commandButton action="#{editAccount.editAccountDto(record)}" tooltip="#{msg['action.edit.account']}">
+                                <div class="icon_menu"><em class="pi pi-user-edit"></em></div>
+                            </b:commandButton>
+                            <b:commandButton action="#{removeAccount.removeAccount(record)}" look="danger" tooltip="#{msg['action.delete.account']}" rendered="#{not record.confirmed}">
+                                <div class="icon_menu"><em class="pi pi-user-minus"></em></div>
+                            </b:commandButton>
+                            <b:commandButton action="#{resetPassword.resetPassword(record)}" tooltip="#{msg['menu.accounts.resetPassword']}">
+                                <div class="icon_menu"><em class="pi pi-shield"></em></div>
+                            </b:commandButton>
+                        </b:dataTableColumn>
+                    </b:dataTable>
+                    <f:facet name="footer">
+                        #{msg['general.total.number']}: <b:badge value="#{accountList.accountDtoList.size()}" />
+                    </f:facet>
+                </b:panel>
+            </h:form>
+        </b:container> 
+    </ui:define>
+</ui:composition>

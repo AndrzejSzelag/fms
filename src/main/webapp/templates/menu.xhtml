@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:b="http://bootsfaces.net/ui">
+    <h:form id="menu">
+        <f:subview id="guests" rendered="#{empty request.remoteUser}">
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+            <b:commandLink look="default" class="button_menu"  action="registerAccount">
+                <div class="icon_menu"><em class="pi pi-user-plus"></em>&nbsp;#{msg['action.register']}</div>
+            </b:commandLink>        
+        </f:subview>
+        <f:subview id="accounts" rendered="#{request.isUserInRole('Administrator')}">
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['menu.accounts']}</div>
+            <b:commandLink look="default" class="button_menu" action="accountList">
+                <div class="icon_menu"><em class="pi pi-users"></em>&nbsp;#{msg["menu.accounts.list"]}&nbsp;<b:badge value="#{accountList.accountDtoList.size()}" /></div>
+            </b:commandLink>
+            <br />
+            <b:commandLink look="default" class="button_menu" action="createAdministrator">
+                <div class="icon_menu"><em class="pi pi-user-plus"></em>&nbsp;#{msg['menu.accounts.createAdministrator']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="createSupervision">
+                <div class="icon_menu"><em class="pi pi-user-plus"></em>&nbsp;#{msg['menu.accounts.createSupervision']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu"  action="createElectrician">
+                <div class="icon_menu"><em class="pi pi-user-plus"></em>&nbsp;#{msg['menu.accounts.createElectrician']}</div>
+            </b:commandLink>
+            <br />
+        </f:subview>
+        <f:subview id="faultsSupervision" rendered="#{request.isUserInRole('Supervision')}">
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['menu.faults']}</div>
+            <b:commandLink look="default" class="button_menu" action="createFault">
+                <div class="icon_menu"><em class="pi pi-calendar-plus"></em>&nbsp;#{msg["menu.fault.add"]}</div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="faultList">
+                <div class="icon_menu"><em class="pi pi-clone"></em>&nbsp;#{msg["menu.faults.list"]}&nbsp;<b:badge value="#{faultList.faultDtoList.size()}" /></div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="supervisionAcceptedFaultList">
+                <div class="icon_menu"><em class="pi pi-clone"></em>&nbsp;#{msg["supervision.my.accepted.faults"]}&nbsp;<b:badge value="#{supervisionFaultList.supervisionAcceptedFaultDtoList.size()}" /></div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="supervisionAssignedFaultList">
+                <div class="icon_menu"><em class="pi pi-clone"></em>&nbsp;#{msg["supervision.my.assigned.faults"]}&nbsp;<b:badge value="#{supervisionFaultList.supervisionAssignedFaultDtoList.size()}" /></div>
+            </b:commandLink>
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['menu.stations']}</div>
+            <b:commandLink look="default" class="button_menu" action="createStation">
+                <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;#{msg["menu.station.add"]}</div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="stationList">
+                <div class="icon_menu"><em class="pi pi-share-alt"></em>&nbsp;#{msg["menu.stations.list"]}&nbsp;<b:badge value="#{stationList.stationDtoList.size()}" /></div>
+            </b:commandLink>
+        </f:subview>
+        <f:subview id="faultsElectrician" rendered="#{request.isUserInRole('Electrician')}">
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['menu.faults']}</div>
+            <b:commandLink look="default" class="button_menu" action="electricianFaultList">
+                <div class="icon_menu"><em class="pi pi-clone"></em>&nbsp;#{msg["menu.faults.list.assigned"]}&nbsp;<b:badge value="#{electricianFaultList.electricianFaultDtoList.size()}" /></div>
+            </b:commandLink>
+        </f:subview>
+        <f:subview id="loggedUsers" rendered="#{not empty request.remoteUser}" >
+            <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['menu.my.account']}</div>
+            <b:commandLink look="default" class="button_menu" action="changeMyPassword">
+                <div class="icon_menu"><em class="pi pi-shield"></em>&nbsp;#{msg['menu.accounts.changeMyPassword']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" class="button_menu" action="accountData">
+                <div class="icon_menu"><em class="pi pi-id-card"></em>&nbsp;#{msg['menu.my.accounts.details']}</div>
+            </b:commandLink>
+        </f:subview>
+    </h:form>
+
+</ui:composition>

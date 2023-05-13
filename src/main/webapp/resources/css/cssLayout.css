@@ -1,0 +1,22 @@
+#top {
+    position: relative;
+    background-color: var(--primaryColor);
+    color: var(--offBlack);
+    min-height: 50px;
+}
+
+#left {
+    float: left;
+    background-color: var(--mainGrey);
+    color: var(--offBlack);
+    padding: 2px;
+    width: 270px;
+    min-height: calc(100vh - 50px);
+}
+
+#content {
+    padding-top: 5px;
+    margin-left: 270px;
+    min-height: calc(100vh - 50px);
+    background: url("./images/bg.jpg") center/cover no-repeat;
+}

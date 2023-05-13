@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="accountList" immediate="true">
+                <div class="icon_menu"><em class="pi pi-caret-left"></em>&nbsp;&nbsp;#{msg['action.backToAccountList']}</div>
+            </b:commandLink>            
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <h:form id="form">
+                <b:panel style="position: absolute; margin: 0 150px; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <b:message for="infoForm" style="font-weight: bolder;" showIcon="true" />
+                    <f:facet name="heading">
+                        <em class="pi pi-user-edit"></em>&nbsp;#{msg["menu.accounts.edit"]}
+                    </f:facet>
+                    <f:subview id="details" rendered="#{not empty editAccount.accountDto.login}">                    
+                        <h:outputText value="#{msg['account.login']}" />:
+                        <h:outputText value="#{editAccount.accountDto.login}" style="font-weight: bolder" /> 
+                        <br /><br />
+                        <h:outputText value="#{msg['account.firstName']}*" /> 
+                        <b:message for="firstName" showIcon="false" />
+                        <b:inputText id="firstName" value="#{editAccount.accountDto.firstName}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.lastName']}*" /> 
+                        <b:message for="lastName" showIcon="false" />
+                        <b:inputText id="lastName" value="#{editAccount.accountDto.lastName}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.phone']}*" /> 
+                        <b:message for="phone" showIcon="false" />
+                        <b:inputText id="phone" value="#{editAccount.accountDto.phone}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-mobile icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <c:if test="#{editAccount.administrator}">
+                            <h:outputText value="#{msg['account.alarmphone']}*" />
+                            <b:message for="alarmPhone" showIcon="false" />
+                            <b:inputText id="alarmPhone" value="#{editAccount.accountDto.alarmPhone}" required="true">
+                                <f:facet name="prepend"><em class="pi pi-phone icon_menu"></em></f:facet>
+                            </b:inputText>                       
+                        </c:if>
+                        <c:if test="#{editAccount.electrician or editAccount.supervision}">
+                            <h:outputText value="#{msg['account.department']}*" />
+                            <b:message for="department" showIcon="false" />
+                            <b:inputText id="department" value="#{editAccount.accountDto.department}" required="true">
+                                <f:facet name="prepend"><em class="pi pi-table icon_menu"></em></f:facet>
+                            </b:inputText>  
+                        </c:if>
+                        <h:outputText value="#{msg['account.activated']}" />
+                        <b:message for="activated" showIcon="false" />
+                        <b:selectBooleanCheckbox id="activated" value="#{editAccount.accountDto.activated}" />                    
+                    </f:subview>
+                    <br />
+                    <b:buttonToolbar>
+                        <b:buttonGroup>
+                            <c:if test="#{editAccount.administrator}">
+                                <b:commandButton id="infoForm" look="success" action="#{editAccount.saveEditedAdministratorDto()}" tooltip="#{msg['action.save']}">
+                                    <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;&nbsp;#{msg['action.save']}</div>
+                                </b:commandButton>
+                            </c:if>
+                            <c:if test="#{editAccount.supervision}">
+                                <b:commandButton id="infoForm" look="success" action="#{editAccount.saveEditedSupervisionDto()}" tooltip="#{msg['action.save']}">
+                                    <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;&nbsp;#{msg['action.save']}</div>
+                                </b:commandButton>
+                            </c:if>
+                            <c:if test="#{editAccount.electrician}">
+                                <b:commandButton id="infoForm" look="success" action="#{editAccount.saveEditedElectricianDto()}" tooltip="#{msg['action.save']}">
+                                    <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;&nbsp;#{msg['action.save']}</div>
+                                </b:commandButton>
+                            </c:if>
+                            <b:commandButton action="accountList" immediate="true" tooltip="#{msg['action.close']}">
+                                <div class="icon_menu"><em class="pi pi-power-off"></em>&nbsp;&nbsp;#{msg['action.close']}</div>
+                            </b:commandButton> 
+                        </b:buttonGroup>
+                    </b:buttonToolbar>
+                </b:panel>
+            </h:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

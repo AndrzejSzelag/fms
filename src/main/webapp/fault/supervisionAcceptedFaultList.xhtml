@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">                    
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="true">
+            <b:growl class="info_message" placementFrom="top" animation-enter="animated bounceInDown" animation-exit="animated flipOutX" allowDismiss="true" escape="true" />
+            <h:form id="form">
+                <b:panel style="position: absolute; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <f:facet name="heading">
+                        <em class="pi pi-clone"></em>&nbsp;#{msg['supervision.my.accepted.faults']}&nbsp;(#{accountSession.firstAndLastName})
+                    </f:facet>
+                    <b:dataTable id="dtFaults" style="top" var="fault" value="#{supervisionFaultList.supervisionAcceptedFaultDtoList}" fixedHeader="true" striped="false" 
+                                 rowHighlight="true" paginated="true" pageLength="10" pageLengthMenu="7,10,13" excel="true" pdf="true" print="true" border="false">
+                        <f:facet name="header">
+                            <th id="supervision_accepted_fault_status">#{msg['fault.status']}</th>
+                            <th id="supervision_accepted_fault_reported_date">#{msg['fault.reported.date']}</th>
+                            <th id="supervision_accepted_fault_station">#{msg['fault.station']}</th>
+                            <th id="supervision_accepted_fault_description">#{msg['fault.description']}</th>
+                            <th id="supervision_accepted_fault_reported">#{msg['fault.reported']}</th>
+                            <th id="supervision_accepted_fault_assigned">#{msg['fault.assigned']}</th>
+                            <th id="supervision_accepted_fault_repair_date">#{msg['fault.repair.date']}</th>
+                            <th id="supervision_accepted_fault_srk">#{msg['SRK']}</th>
+                        </f:facet>
+                        <b:dataTableColumn>
+                            <h:outputLabel class="type_fault_center_new" rendered="#{fault.status.description eq 'NEW'}"><em class="pi pi-circle-off icon"></em>&nbsp;#{msg['fault.status.new']}</h:outputLabel>
+                            <h:outputLabel class="type_fault_center_assigned" rendered="#{fault.status.description eq 'ASSIGNED'}"><em class="pi pi-minus-circle icon"></em>&nbsp;#{msg['fault.status.assigned']}</h:outputLabel>
+                            <h:outputLabel class="type_fault_center_ended" rendered="#{fault.status.description eq 'ENDED'}"><em class="pi pi-plus-circle icon"></em>&nbsp;#{msg['fault.status.ended']}</h:outputLabel>
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <h:outputText value="#{fault.createTimestamp}">
+                                <f:convertDateTime type="both" locale="pl" timeZone="CET" pattern="dd.MM.yyyy, HH:mm" dateStyle="#{fault.createTimestamp}"/>
+                            </h:outputText>
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>#{fault.station.stationName}</b:dataTableColumn>
+                        <b:dataTableColumn>#{fault.faultDescription}</b:dataTableColumn>
+                        <b:dataTableColumn>#{fault.reported}</b:dataTableColumn>
+                        <b:dataTableColumn>#{fault.supervisionAssigned.lastName}</b:dataTableColumn>
+                        <b:dataTableColumn>
+                            <h:outputText value="#{fault.modificationTimestamp}">
+                                <f:convertDateTime type="both" locale="pl" timeZone="CET" pattern="dd.MM.yyyy, HH:mm" dateStyle="#{fault.modificationTimestamp}"/>
+                            </h:outputText>
+                        </b:dataTableColumn>
+                        <b:dataTableColumn>#{fault.electrician.lastName}</b:dataTableColumn>
+                    </b:dataTable>
+                    <f:facet name="footer">
+                        #{msg['general.total.number']}: <b:badge value="#{supervisionFaultList.supervisionAcceptedFaultDtoList.size()}" />
+                    </f:facet>
+                </b:panel>
+            </h:form>
+        </b:container> 
+    </ui:define>
+</ui:composition>

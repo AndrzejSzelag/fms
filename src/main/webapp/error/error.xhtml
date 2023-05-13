@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left"></ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <b:jumbotron style="background: transparent">
+                <h:form id="form">
+                    <p:card class="card" style="background-color: #f9d7d7;">                       
+                        <h:panelGrid>
+                            <div class="error_header">#{msg["error.page"]}</div>
+                            <div class="error_body">#{msg["error.page.message"]}</div>
+                        </h:panelGrid>   
+                        <h:panelGrid>                   
+                            <b:commandButton action="main" tooltip="#{msg['action.close']}">
+                                <div class="icon_menu"><em class="pi pi-power-off"></em>&nbsp;&nbsp;#{msg['action.close']}</div>
+                            </b:commandButton>
+                        </h:panelGrid>
+                    </p:card>
+                </h:form>
+            </b:jumbotron>
+        </b:container>
+    </ui:define>
+</ui:composition>

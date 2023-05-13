@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">        
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>            
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <h:form id="form">
+                <b:panel style="position: absolute; margin: 0 150px; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <b:message for="infoForm" style="font-weight: bolder;" showIcon="true" />
+                    <f:facet name="heading">
+                        <em class="pi pi-user-plus"></em>&nbsp;#{msg["menu.accounts.createElectrician"]}
+                    </f:facet>
+                    <div class="output_label_box">
+                        <h:outputText value="#{msg['account.login']}*" />
+                        <b:message for="login" showIcon="false" />
+                        <b:inputText value="#{createElectrician.electricianDto.login}" id="login" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.password']}*" /> 
+                        <b:message for="password" showIcon="false" />
+                        <b:inputSecret id="password" value="#{createElectrician.electricianDto.password}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-key icon_menu"></em></f:facet>
+                        </b:inputSecret>
+                        <h:outputText value="#{msg['account.passwordRepeat']}*" /> 
+                        <b:message for="passwordRepeat" showIcon="false" />
+                        <b:inputSecret id="passwordRepeat" value="#{createElectrician.passwordRepeat}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-key icon_menu"></em></f:facet>
+                        </b:inputSecret>
+                        <h:outputText value="#{msg['account.firstName']}*" /> 
+                        <b:message for="firstName" showIcon="false" />
+                        <b:inputText id="firstName" value="#{createElectrician.electricianDto.firstName}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.lastName']}*" /> 
+                        <b:message for="lastName" showIcon="false" />
+                        <b:inputText id="lastName" value="#{createElectrician.electricianDto.lastName}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.phone']}*" /> 
+                        <b:message for="phone" showIcon="false" />
+                        <b:inputText id="phone" value="#{createElectrician.electricianDto.phone}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-mobile icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['account.department']}*" /> 
+                        <b:message for="department" showIcon="false" />
+                        <b:inputText id="department" value="#{createElectrician.electricianDto.department}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-table icon_menu"></em></f:facet>
+                        </b:inputText>
+                    </div>
+                    <b:buttonToolbar>
+                        <b:buttonGroup>
+                            <b:commandButton id="infoForm" look="success" action="#{createElectrician.createNewElectrician()}" tooltip="#{msg['action.save.account']}">
+                                <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;&nbsp;#{msg['action.save']}</div>
+                            </b:commandButton>
+                            <b:commandButton action="main" immediate="true" tooltip="#{msg['action.close']}">
+                                <div class="icon_menu"><em class="pi pi-power-off"></em>&nbsp;&nbsp;#{msg['action.close']}</div>
+                            </b:commandButton> 
+                        </b:buttonGroup>
+                    </b:buttonToolbar>
+                </b:panel>
+            </h:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

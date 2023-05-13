@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">                    
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="faultList" immediate="true">
+                <div class="icon_menu"><em class="pi pi-clone"></em>&nbsp;&nbsp;#{msg['menu.faults.list']}</div>
+            </b:commandLink>
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <h:form id="form">
+                <b:panel style="position: absolute; margin: 0 150px; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <b:message for="infoForm" style="font-weight: bolder;" showIcon="true" />
+                    <f:facet name="heading">
+                        <em class="pi pi-calendar-plus"></em>&nbsp;#{msg["fault.add"]}
+                    </f:facet>
+                    <div class="output_label_box">
+                        <h:outputText value="#{msg['fault.reported']}*" /> 
+                        <b:message for="reported" showIcon="false" />
+                        <b:inputText id="reported" value="#{createFault.faultDto.reported}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                        </b:inputText>
+                        <h:outputText value="#{msg['fault.description']}*" /> 
+                        <b:message for="description" showIcon="false" />
+                        <b:inputTextarea id="description" value="#{createFault.faultDto.faultDescription}" required="true" rows="3" maxlength="200" >
+                            <f:facet name="prepend"><em class="pi pi-pencil icon_menu"></em></f:facet>
+                        </b:inputTextarea>
+                        <h:outputText value="#{msg['fault.station']}*" />                         
+                        <b:message for="station" showIcon="false" />
+                        <b:selectOneMenu id="station" value="#{createFault.stationId}" required="true">
+                            <f:facet name="prepend"><em class="pi pi-bookmark icon_menu"></em></f:facet>
+                            <f:selectItem itemValue="#{null}" itemLabel="" />
+                            <f:selectItems value="#{createFault.stationsDto}" var="station" itemValue="#{station.id}" itemLabel="#{station.stationName}" />
+                        </b:selectOneMenu>
+                    </div>
+                    <b:buttonToolbar>
+                        <b:buttonGroup>
+                            <b:commandButton id="infoForm" look="success" action="#{createFault.createFault()}" tooltip="#{msg['action.save']}">
+                                <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;&nbsp;#{msg['action.save']}</div>
+                            </b:commandButton> 
+                            <b:commandButton action="main" immediate="true" tooltip="#{msg['action.close']}">
+                                <div class="icon_menu"><em class="pi pi-power-off"></em>&nbsp;&nbsp;#{msg['action.close']}</div>
+                            </b:commandButton> 
+                        </b:buttonGroup>
+                    </b:buttonToolbar>
+                </b:panel>
+            </h:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

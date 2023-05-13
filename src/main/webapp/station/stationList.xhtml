@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="top"></ui:define>faultsDto
+    <ui:define name="left">
+        <div style="font-weight: bold; padding: 20px 0 0 0;">#{msg['main.menu']}</div>
+        <h:form id="menu">                    
+            <b:commandLink look="default" style="width: 100%; text-align: left" action="main" immediate="true">
+                <div class="icon_menu"><em class="pi pi-home"></em>&nbsp;&nbsp;#{msg['main.page']}</div>
+            </b:commandLink>
+            <b:commandLink look="default" style="width: 100%; text-align: left"  action="createStation" immediate="true">
+                <div class="icon_menu"><em class="pi pi-th-large"></em>&nbsp;#{msg["menu.station.add"]}</div>
+            </b:commandLink>
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+        <b:container fluid="false">
+            <b:growl class="info_message" placementFrom="top" animation-enter="animated bounceInDown" animation-exit="animated flipOutX" allowDismiss="true" escape="true" />
+            <h:form id="form">
+                <b:panel style="position: absolute; margin: 0 150px; width: auto; background: #fafafa;" look="success" showCollapseLink="false">
+                    <f:facet name="heading">
+                        <em class="pi pi-share-alt"></em>&nbsp;#{msg['menu.stations.list']}
+                    </f:facet>
+                    <b:dataTable id="dtStations" style="top" var="station" value="#{stationList.stationDtoList}" fixedHeader="true" striped="false" 
+                                 rowHighlight="true" paginated="true" pageLength="10" pageLengthMenu="7,10,13" excel="true" pdf="true" print="true" border="false">
+                        <f:facet name="header">
+                            <th id="station_name">#{msg['station.name']}</th>
+                        </f:facet>                       
+                        <b:dataTableColumn>#{station.stationName}</b:dataTableColumn>
+                    </b:dataTable>
+                    <f:facet name="footer">
+                        #{msg['general.total.number']}: <b:badge value="#{stationList.stationDtoList.size()}" />
+                    </f:facet>
+                </b:panel>
+            </h:form>
+        </b:container> 
+    </ui:define>
+</ui:composition>

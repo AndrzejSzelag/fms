@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+        <title>
+            <ui:insert name="title">#{msg['app.name']}</ui:insert>
+        </title>
+    </h:head>
+    <h:body>        
+        <div id="top">
+            <ui:insert name="top"></ui:insert>
+            <b:navBar brand-style="color: #000000" brand="#{msg['app.name']}" brandHref="/FMS/faces/main/index.xhtml" fluid="true" position="top" sticky="true">
+                <b:navbarLinks pull="right">
+                    <b:form id="loginForm" styleClass="navbar-form navbar-right">
+                        <span class="form-group">
+                            <b:inputText placeholder="#{msg['account.login']}" value="#{loginController.username}" rendered="#{empty request.remoteUser}">
+                                <f:facet name="prepend"><em class="pi pi-user icon_menu"></em></f:facet>
+                            </b:inputText>
+                        </span>
+                        <span class="form-group">
+                            <b:inputText placeholder="#{msg['account.password']}" value="#{loginController.password}" type="password" rendered="#{empty request.remoteUser}">
+                                <f:facet name="prepend"><em class="pi pi-key icon_menu"></em></f:facet>
+                            </b:inputText>
+                        </span>   
+                        <span class="form-group">
+                            <b:commandButton action="#{accountSession.resetSession()}" rendered="#{not empty request.remoteUser}" tooltip="#{msg['action.logout']}">
+                                <div class="icon_menu"><em class="pi pi-sign-out"></em>&nbsp;#{msg['action.logout']}<span style="color: green;">&nbsp;#{accountSession.firstAndLastName}</span></div>
+                            </b:commandButton>
+                            <b:commandButton action="#{loginController.login()}" value="#{msg['action.login']}" tooltip="#{msg['action.login']}"
+                                             rendered="#{empty request.remoteUser}"><em class="pi pi-sign-in icon_menu">&nbsp;</em>
+                            </b:commandButton>
+                        </span>
+                    </b:form>
+                </b:navbarLinks>
+            </b:navBar>
+        </div>
+        <div id="left">
+            <ui:insert name="left"></ui:insert>
+        </div>
+        <div id="content">
+            <ui:insert name="content"></ui:insert>
+        </div>
+    </h:body>
+</html>

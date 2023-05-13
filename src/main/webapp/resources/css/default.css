@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800");
+
+body, html, * {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainGreen: #177245;
+    --primaryColor: #f1f1f1;
+    --mainWhite: #ffffff;
+    --offWhite: #f0f0f0;
+    --mainBlack: #333333;
+    --offBlack: #555555;
+    --mainGrey: #dddddd;
+    --darkGrey: #999999;
+    --mainLightBlue: #c8f4ff;
+}
+
+.container {
+    position: relative;
+    flex-direction: column;
+}
+
+.container .element {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+i, span, a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+a:link, a:visited, a:link:hover, a:visited:hover  {
+    color: var(--offBlack);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+a:focus, input:focus, textarea:focus, select:focus, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.icon {
+    font-size: 1em;
+}
+
+.icon_center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icon_menu {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.button_menu {
+    width: 265px;
+    text-align: left;
+}
+
+.register_question, .login_question {
+    padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: var(--offBlack);
+}
+
+.register_here, .login_here {
+    padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: var(--mainGreen);
+}
+
+div.error_header, div.success_header {
+    padding: 3px 0 6px 0;
+    font-weight: bolder;
+    color: var(--mainBlack);
+    font-size: 1.5em;
+}
+
+div.error_body, div.success_body {
+    padding: 15px 0 30px 0;
+    font-size: 1.1em;
+}
+
+.error_login {
+    padding: 7px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #f9d7d7;
+    color: darkred;
+    border: 1px solid pink;
+}
+
+.info_message {
+    z-index: -1;
+    padding: 30px;
+    position: relative;
+    content: "";
+    min-width: 300px;
+    width: auto;
+    background-color: var(--mainLightBlue);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bolder;
+    color: var(--mainBlack);
+    text-align: center;
+}
+
+.dataTable{
+    background-color: var(--mainWhite);
+    color: var(--mainBlack);
+}
+
+.output_label_right {
+    width: 100%;
+    padding: 3px 75px;
+    color: var(--mainBlack);
+    border-bottom: 1px solid var(--mainGrey);
+}
+
+.outputLabelLeft {
+    color: var(--offBlack);
+}
+
+.output_label_box {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form_header {
+    border-bottom: 2px solid var(--mainGrey);
+}
+
+.type_account_center_administrator {
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: lightseagreen;
+}
+
+.type_account_center_supervision {
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: lightslategray;
+}
+.type_account_center_electrician {
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: brown;
+}
+
+.type_fault_center_new {
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: red;
+    ;
+}
+
+.type_fault_center_assigned {
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: darkorange;
+    ;
+}
+.type_fault_center_ended {
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    color: green;
+    ;
+}
+
+.dataTable {
+    border-bottom: 3px solid var(--mainGrey);
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        background-color: #addfbb;
+        ;
+        border-right: 1px solid var(--mainGrey);
+        bottom: 0;
+        display: block;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 10px;
+        position: fixed;
+        top: 51px;
+        z-index: 1000;
+    }
+}

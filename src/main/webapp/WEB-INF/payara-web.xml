@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payara-web-app PUBLIC "-//Payara.fish//DTD Payara Server 4 Servlet 3.0//EN" "https://docs.payara.fish/schemas/payara-web-app_4.dtd">
+<payara-web-app error-url="">
+    <context-root>/FMS</context-root>
+    <security-role-mapping>
+        <role-name>Administrator</role-name>
+        <group-name>Administrator</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>Electrician</role-name>
+        <group-name>Electrician</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>Supervision</role-name>
+        <group-name>Supervision</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>AUTHENTICATOR</role-name>
+        <principal-name>TheMightyAuthenticator</principal-name>
+    </security-role-mapping>
+
+    <class-loader delegate="true"/>
+  
+    <jsp-config>
+        <property name="keepgenerated" value="true" />
+    </jsp-config>
+</payara-web-app>

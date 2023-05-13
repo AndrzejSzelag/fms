@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.3"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd">
+    <navigation-rule>
+        <from-view-id>/*</from-view-id>
+        <navigation-case>
+            <from-outcome>login</from-outcome>
+            <to-view-id>/login/customFormLogin.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>        
+        <navigation-case>
+            <from-outcome>loginError</from-outcome>
+            <to-view-id>/login/customFormLoginError.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>main</from-outcome>
+            <to-view-id>/main/index.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>    
+        <navigation-case>
+            <from-outcome>registerAccount</from-outcome>
+            <to-view-id>/account/registerAccount.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createAdministrator</from-outcome>
+            <to-view-id>/account/createAdministrator.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createSupervision</from-outcome>
+            <to-view-id>/account/createSupervision.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createElectrician</from-outcome>
+            <to-view-id>/account/createElectrician.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>accountData</from-outcome>
+            <to-view-id>/account/accountData.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>accountList</from-outcome>
+            <to-view-id>/account/accountList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>accountDetails</from-outcome>
+            <to-view-id>/account/accountDetails.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>           
+        <navigation-case>
+            <from-outcome>changeMyPassword</from-outcome>
+            <to-view-id>/account/changeMyPassword.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>  
+        <navigation-case>
+            <from-outcome>accountList</from-outcome>
+            <to-view-id>/account/accountList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>editAccount</from-outcome>
+            <to-view-id>/account/editAccount.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>          
+        <navigation-case>
+            <from-outcome>resetPassword</from-outcome>
+            <to-view-id>/account/resetPassword.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createFault</from-outcome>
+            <to-view-id>/fault/createFault.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>faultList</from-outcome>
+            <to-view-id>/fault/faultList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>        
+        <navigation-case>
+            <from-outcome>editFault</from-outcome>
+            <to-view-id>/fault/editFault.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>supervisionAcceptedFaultList</from-outcome>
+            <to-view-id>/fault/supervisionAcceptedFaultList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>supervisionAssignedFaultList</from-outcome>
+            <to-view-id>/fault/supervisionAssignedFaultList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>electricianList</from-outcome>
+            <to-view-id>/fault/electricianList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>        
+        <navigation-case>
+            <from-outcome>electricianFaultList</from-outcome>
+            <to-view-id>/fault/electricianFaultList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>    
+        <navigation-case>
+            <from-outcome>createStation</from-outcome>
+            <to-view-id>/station/createStation.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>stationList</from-outcome>
+            <to-view-id>/station/stationList.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>   
+        <navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/success/success.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>                        
+    </navigation-rule>
+    <application>
+        <locale-config>
+            <default-locale>pl</default-locale>
+            <supported-locale>pl</supported-locale>
+            <supported-locale>en</supported-locale>
+        </locale-config>
+        <resource-bundle>
+            <base-name>i18n.messages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+        <message-bundle>
+            i18n.jsf_messages
+        </message-bundle>
+        <resource-bundle>
+            <base-name>/Bundle</base-name>
+            <var>bundle</var>
+        </resource-bundle>
+    </application>        
+</faces-config>
