@@ -36,7 +36,7 @@
 6. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to Payara Server (__lib__ folder).
 7. Run __Oracle Database 21c Express Edition__.
 8. Run __Payara Server 5.2021.10__.
-9. Clone FMS.
+9. Run __git clone https://github.com/AndrzejSzelag/fms.git__.
 
 ### Description
 
