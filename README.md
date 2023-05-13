@@ -84,4 +84,6 @@
 
 ### Description
 
-Comming Soon
+👉 FMS is my first web business application in Java programming language, which summarizes the knowledge gained during postgraduate studies "Modern Java/Jakarta EE business applications" at the Lodz University of Technology. This application cost me a lot of work, although I realize that there is still a lot to improve in it.
+
+👉 This application uses Java EE technology and many standards that are related to it, such as JPA, JTA, EJB, CDI or JSF. It also uses the advanced Oracle Database and the Payara application server.
