@@ -53,7 +53,7 @@
 
     > Example
     > 
-    > ![cmd4.java](cmd4.png)
+    > ![cmd4.png](cmd4.png)
 
 10. Clone a Github Repository:
    * From Github Repository, click on __Clone__
@@ -63,7 +63,7 @@
     
     > Example
     > 
-    > ![cmd2.java](cmd2.png)
+    > ![cmd2.png](cmd2.png)
 
 11. In __D:\fms__ folder run __mvn clean install__ command.
 12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__:
