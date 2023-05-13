@@ -60,6 +60,10 @@
     * Copy the clone URL (__https://github.com/AndrzejSzelag/fms.git__)
     * In command line Windows, move to partition __D:__ 
     * Use the __git clone__ command along with the copied URL.
+
+    > Example
+    > 
+    > ![cmd2.png](cmd2.png)
     
 11. In command line Windows, move to __D:\fms__ folder, and run __mvn clean install__ command.
 12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__:
