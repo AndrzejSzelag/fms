@@ -49,7 +49,7 @@
     > ![cmd1.png](cmd1.png)
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
-8. Run __Payara Server 5.2021.10__:
+8. Run __Payara Server 5.2021.10__ using __asadmin__ utility with __start-domain__ subcommand.
 
     > Example
     > 
