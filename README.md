@@ -51,7 +51,7 @@
     > ![cmd2.java](cmd2.png)
 
 11. Into __D:\fms__ folder run __mvn clean install__ command.
-12. Deploy __D:\fms\target\FMS-1.0.war__ file to __Payara Server 5.2021.10__.
+12. Deploy __D:\fms\target\FMS-1.0.war__ file on __Payara Server 5.2021.10__.
 13. In __Oracle Database 21c Express Edition__ run __data.sql__ file from __\fms\src\main\resources__ folder.
 14. In your Web browser use URL: __https://localhost:8181/FMS__.
 
