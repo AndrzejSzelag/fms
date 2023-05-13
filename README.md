@@ -71,7 +71,7 @@
 
 ![url1.java](url1.png)
 
-17. Click on __Continue to local (unsafe) __
+17. Click on __Continue to local (unsafe)__
 
 ![url2.java](url2.png)
 
