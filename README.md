@@ -37,7 +37,7 @@
 
     > #### IMPORTANT
     > 
-    > After instalation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
+    > After installation create a new schema, user account and password - you will need this data in the __DataSource.java__ class:
     > 
     > ![DataSource.java](DataSource.png)
 
