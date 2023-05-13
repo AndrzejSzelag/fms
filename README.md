@@ -39,6 +39,7 @@
 9. Use __git clone https://github.com/AndrzejSzelag/fms.git__ command. 
 10. From __fms__ folder use __mvn clean install__ command.
 11. From __fms\target__ folder deploy __FMS-1.0.war__ file to the __Payara Server 5.2021.10__ (you can use __asadmin deploy__ command).
+12. Use URL address: __https://localhost:8181/FMS__.
 
 ### Description
 
