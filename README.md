@@ -41,7 +41,7 @@
     > Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ (__lib__ folder) to __Payara Server__ (__lib__ folder)!
     > 
     > #### EXAMPLE
-    > ![cmd1.png(cmd1.png)
+    > ![cmd1.png](cmd1.png)
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. Verify if __Payara Server 5.2021.10__ runs.
