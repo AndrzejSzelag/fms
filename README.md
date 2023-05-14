@@ -1,7 +1,7 @@
 # FMS (Fault Management System)
 ### IT System for Managing Control System Faults on the Mining Railways
 
-![url3.java](url3.png)
+![url3.java](url3.png "Fault Management System")
 
 ### Tech Stack
 * 🔶 Java 17.0.6 LTS
