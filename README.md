@@ -57,12 +57,12 @@
         }
 
 6. Download the __Payara Server 5.2021.10__ and extract zip file to a local directory.
-7. In command line Windows, copy __ojdbc11.jar__ file from the __Oracle Database 21c Express Edition__ to the __Payara Server 5.2021.10__:
+7. In command line Windows, copy file __ojdbc11.jar__ from the __Oracle Database 21c Express Edition__ to the __Payara Server 5.2021.10__:
 
        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
 
 7. Verify if the __Oracle Database 21c Express Edition__ runs.
-8. In command line Windows, start default domain __domain1__ on the __Payara Server 5.2021.10__ using __asadmin__ utility and __start-domain__ subcommand:
+8. In command line Windows, start default domain on the __Payara Server 5.2021.10__:
 
         %PAYARA_HOME%\bin\asadmin start-domain
 
@@ -76,15 +76,15 @@
           git clone https://github.com/AndrzejSzelag/fms.git
         
     
-11. In command line Windows, move to __D:\fms__ folder, and run command: 
+11. In command line Windows, move to __D:\fms__ folder, and run: 
 
         mvn clean install
 
-13. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on the __Payara Server 5.2021.10__.
+13. In command line Windows, move to __D:\fms\target__ folder and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
 
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
-14. In the __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
+14. In the __Oracle Database 21c Express Edition__ execute file __data.sql__ from folder __D:\fms\src\main\resources__.
 15. In your Web browser,
     * paste a URL:
 
@@ -93,7 +93,7 @@
     * click on __Advanced__
     * click on __Continue to localhost (unsafe)__
 
-__You should see the main page application (tip: first photo)__!
+__You should see the main page of application (tip: first photo)__!
 
 
 ### Description
