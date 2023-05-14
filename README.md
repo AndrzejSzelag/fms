@@ -76,7 +76,7 @@
           git clone https://github.com/AndrzejSzelag/fms.git
         
     
-11. In command line Windows, move to __D:\fms__ folder, and run: 
+11. In command line Windows, move to folder __D:\fms__, and run command: 
 
         mvn clean install
 
