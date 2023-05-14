@@ -95,6 +95,12 @@
 #### You should see the main page of application (tip: first photo)__ and log in to the FMS application.
 
 > #### IMPORTANT
+> 
+> Test users: 
+> * __AndrzejSzelag__ (administrator)
+> * __TomaszDominiak__ (supervision)
+> * __ArekStolecki__ (electrician)
+> 
 > Default password for all test users: __12345678__
 
 
