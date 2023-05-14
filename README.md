@@ -38,8 +38,6 @@
     * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__:
 
 
-   > #### EXAMPLE
-   > 
         package pl.szelag.config;
     
         import javax.annotation.sql.DataSourceDefinition;
@@ -83,22 +81,7 @@
         
 12. In the folder __D:\fms\src\main\java\pl\szelag\config__ edit file __DataSource.java__ and fill fields __user = ""__ and __password = ""__ the real data (e.g. __user = "system"__, __password = "pa$$w0rd"__):
 
-        package pl.szelag.config;
-    
-        import javax.annotation.sql.DataSourceDefinition;
-        import javax.ejb.Singleton;
-        import java.sql.Connection;
-    
-        @Singleton
-        @DataSourceDefinition(
-                name = "java:app/jdbc/FMSDescriptorDS",
-                className = "oracle.jdbc.OracleDriver",
-                url = "jdbc:oracle:thin:@localhost:1521:XE",
-                user = "system",
-                password = "pa$$w0rd",
-                isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
-        public class DataSource {
-        }
+
 
 13. In command line Windows, move to folder __D:\fms\target__ and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
 
