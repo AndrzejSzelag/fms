@@ -90,7 +90,7 @@
           https://localhost:8181/FMS
             
     * click on __Advanced__
-    * click on __Continue to local (unsafe)__
+    * click on __Continue to localhost (unsafe)__
 
 __You should see the main page application (tip: first photo)__!
 
