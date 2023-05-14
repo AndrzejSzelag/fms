@@ -37,6 +37,7 @@
     * verify if __Oracle Database 21c Express Edition__ runs,
     * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__:
 
+
    > #### EXAMPLE
    > 
         package pl.szelag.config;
