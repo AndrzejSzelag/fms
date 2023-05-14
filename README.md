@@ -80,7 +80,7 @@
 
         mvn clean install
 
-13. In command line Windows, move to __D:\fms\target__ folder and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
+13. In command line Windows, move to folder __D:\fms\target__ and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
 
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
