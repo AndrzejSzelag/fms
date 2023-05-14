@@ -58,6 +58,8 @@
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory  (e.g. __C:\Politechnika\payara__).
 7. Copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ to __Payara Server 5.2021.10__.
 
+        copy C:\app\Andrzej\product\21c\dbhomeXE\jdbc\lib\ojdbc11.jar C:\Politechnika\payara\glassfish\domains\domain1\lib
+    
     > Example
     > 
     > ![cmd1.png](cmd1.png)
