@@ -94,8 +94,6 @@
 
 #### You should see the main page of application (tip: first photo)__ and log in to the FMS application.
 
-> #### IMPORTANT
-> 
 > Logins for test users: 
 > * __AndrzejSzelag__ (administrator)
 > * __TomaszDominiak__ (supervision)
