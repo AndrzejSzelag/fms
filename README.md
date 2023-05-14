@@ -39,7 +39,7 @@
     > 
     > After installation create a new schema, user account and password - you will need this data in __DataSource.java__:
      
-       package pl.szelag.config;
+        package pl.szelag.config;
     
         import javax.annotation.sql.DataSourceDefinition;
         import javax.ejb.Singleton;
