@@ -37,7 +37,7 @@
 
     > #### IMPORTANT
     > 
-    > After installation create a user and password - you will need this data in __DataSource.java__:
+    > After installation create __user__ and __password__ - you will need this data in __DataSource.java__:
      
         package pl.szelag.config;
     
