@@ -72,7 +72,7 @@
     * Use the __git clone__ command along with the copied URL:
 
 
-           git clone https://github.com/AndrzejSzelag/fms.git
+          git clone https://github.com/AndrzejSzelag/fms.git
         
     
 11. In command line Windows, move to __D:\fms__ folder, and run command: 
