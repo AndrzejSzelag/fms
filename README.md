@@ -67,7 +67,7 @@
 
 10. Clone a Github Repository:
     * From Github Repository, click on __Clone__
-    * Copy the clone URL (__https://github.com/AndrzejSzelag/fms.git__)
+    * Copy the clone URL
     * In command line Windows, move to partition __D:__ 
     * Use the __git clone__ command along with the copied URL:
 
