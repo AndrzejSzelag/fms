@@ -79,6 +79,29 @@
 11. In command line Windows, move to folder __D:\fms__, and run command: 
 
         mvn clean install
+        
+12. Move to folder __D:\fms\src\main\resources__ and change extract zip file to a local directory and run __setup.exe__. 
+
+    > #### IMPORTANT
+    > 
+    > In the folder __D:\fms\src\main\resources__ find file __DataSource.java and fill user = "<USER>" and password = "<PASSWORD>" the real data:
+     
+        package pl.szelag.config;
+    
+        import javax.annotation.sql.DataSourceDefinition;
+        import javax.ejb.Singleton;
+        import java.sql.Connection;
+    
+        @Singleton
+        @DataSourceDefinition(
+                name = "java:app/jdbc/FMSDescriptorDS",
+                className = "oracle.jdbc.OracleDriver",
+                url = "jdbc:oracle:thin:@localhost:1521:XE",
+                user = "system",
+                password = "pa$$w0rd",
+                isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
+        public class DataSource {
+        }
 
 13. In command line Windows, move to folder __D:\fms\target__ and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
 
