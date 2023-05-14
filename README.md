@@ -81,11 +81,7 @@
 
 13. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on __Payara Server 5.2021.10__.
 
-        D:\fms\target>%PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
-    
-    > Example
-    > 
-    > ![cmd3.png](cmd3.png)
+        %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
 15. In your Web browser, use __https://localhost:8181/FMS__.
