@@ -65,10 +65,6 @@
 
         %PAYARA_HOME%\bin\asadmin start-domain
 
-    > Example
-    > 
-    > ![cmd4.png](cmd4.png)
-
 10. Clone a Github Repository:
     * From Github Repository, click on __Clone__
     * Copy the clone URL (__https://github.com/AndrzejSzelag/fms.git__)
