@@ -53,7 +53,8 @@
                 user = "<USER>",
                 password = "<PASSWORD>",
                 isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
-        public class DataSource {}
+        public class DataSource {
+        }
 
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 7. In command line Windows, copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ to __Payara Server 5.2021.10__:
