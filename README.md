@@ -63,6 +63,8 @@
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. In command line Windows, start default domain __domain1__ on the __Payara Server 5.2021.10__ using __asadmin__ utility and __start-domain__ subcommand:
 
+        %PAYARA_HOME%\bin\asadmin start-domain
+
     > Example
     > 
     > ![cmd4.png](cmd4.png)
