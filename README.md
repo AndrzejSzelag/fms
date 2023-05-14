@@ -72,7 +72,7 @@
     * Use the __git clone__ command along with the copied URL:
 
 
-          git clone https://github.com/AndrzejSzelag/fms.git
+         git clone https://github.com/AndrzejSzelag/fms.git
         
     
 11. In command line Windows, move to __D:\fms__ folder, and run command: 
@@ -81,6 +81,8 @@
 
 13. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on __Payara Server 5.2021.10__.
 
+        D:\fms\target>%PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
+    
     > Example
     > 
     > ![cmd3.png](cmd3.png)
