@@ -91,7 +91,12 @@
     * click on __Advanced__
     * click on __Continue to localhost (unsafe)__
 
-__You should see the main page of application (tip: first photo)__!
+
+#### You should see the main page of application (tip: first photo)__ and log in to the FMS application.
+
+> #### IMPORTANT
+> Default password for all users: __12345678__
+
 
 
 ### Description
