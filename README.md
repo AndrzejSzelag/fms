@@ -58,7 +58,7 @@
 6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory  (e.g. __C:\Politechnika\payara__).
 7. In command line Windows, copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ to __Payara Server 5.2021.10__:
 
-        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar C:\Politechnika\payara\glassfish\domains\domain1\lib
+        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
 8. In command line Windows, start default domain __domain1__ on the __Payara Server 5.2021.10__ using __asadmin__ utility and __start-domain__ subcommand:
