@@ -94,8 +94,8 @@
 
 #### You should see the main page of application (tip: first photo)__ and log in to the FMS application.
 
-   > #### IMPORTANT
-   > Default password for all test users: __12345678__
+      > #### IMPORTANT
+      > Default password for all test users: __12345678__
 
 
 
