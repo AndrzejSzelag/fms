@@ -61,7 +61,7 @@
         copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar C:\Politechnika\payara\glassfish\domains\domain1\lib
 
 7. Verify if __Oracle Database 21c Express Edition__ runs.
-8. Start default domain on the __Payara Server 5.2021.10__ using __asadmin__ utility with the __start-domain__ subcommand.
+8. In command line Windows, start default domain on the __Payara Server 5.2021.10__ using __asadmin__ utility with the __start-domain__ subcommand:
 
     > Example
     > 
