@@ -87,7 +87,7 @@
 15. In your Web browser,
     * copy and paste URL:
 
-           https://localhost:8181/FMS
+          https://localhost:8181/FMS
             
     * click on __Advanced__
     * click on __Continue to local (unsafe)__
