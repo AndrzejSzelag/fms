@@ -34,11 +34,10 @@
 2. Download the __Java 17.0.6 LTS__ and install to a local directory.
 3. Download the __Apache Maven 3.8.6__ and extract zip file to a local directory.
 4. Download the __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. 
+5. After installation:
+    * verify if __Oracle Database 21c Express Edition__ runs,
+    * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__:
 
-    > #### IMPORTANT
-    > 
-    > After installation the __Oracle Database 21c Express Edition__, create a new __database user__ and __database password__ - you will need this data in __DataSource.java__:
-     
         package pl.szelag.config;
     
         import javax.annotation.sql.DataSourceDefinition;
@@ -50,8 +49,8 @@
                 name = "java:app/jdbc/FMSDescriptorDS",
                 className = "oracle.jdbc.OracleDriver",
                 url = "jdbc:oracle:thin:@localhost:1521:XE",
-                user = "<DATABASE_USER>",
-                password = "<DATABASE_PASSWORD>",
+                user = "system",
+                password = "pa$$w0rd",
                 isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
         public class DataSource {
         }
