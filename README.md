@@ -60,7 +60,6 @@
 
        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
 
-7. Verify if the __Oracle Database 21c Express Edition__ runs.
 8. In command line Windows, start default domain on the __Payara Server 5.2021.10__:
 
         %PAYARA_HOME%\bin\asadmin start-domain
@@ -79,16 +78,12 @@
 
         mvn clean install
         
-12. In the folder __D:\fms\src\main\java\pl\szelag\config__ edit file __DataSource.java__ and fill fields __user = ""__ and __password = ""__ the real data (e.g. __user = "system"__, __password = "pa$$w0rd"__):
-
-
-
-13. In command line Windows, move to folder __D:\fms\target__ and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
+12. In command line Windows, move to folder __D:\fms\target__ and deploy file __FMS-1.0.war__ to the __Payara Server 5.2021.10__.
 
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
-14. Execute script __data.sql__ from folder __D:\fms\src\main\resources__ to load test data.
-15. In your Web browser,
+13. Execute script __data.sql__ from folder __D:\fms\src\main\resources__ to load test data.
+14. In your Web browser,
     * paste a URL:
 
           https://localhost:8181/FMS
