@@ -84,15 +84,12 @@
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
-15. In your Web browser:
-    * use __https://localhost:8181/FMS__
-    * click on __Advanced__.
+15. In your Web browser use:
 
-    > Example
-    > 
-    > ![url1.java](url1.png)
-
-    * click on __Continue to local (unsafe)__. 
+            https://localhost:8181/FMS
+            
+    * click on __Advanced__
+    * click on __Continue to local (unsafe)__
 
 You should see the main page application (tip: first photo).
 
