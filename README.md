@@ -86,7 +86,7 @@
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
 15. In your Web browser,
-    * paste URL:
+    * paste a URL:
 
           https://localhost:8181/FMS
             
@@ -98,6 +98,6 @@ __You should see the main page application (tip: first photo)__!
 
 ### Description
 
-👉 FMS is my first business application in the Java programming language, summarizing the knowledge I gained in the postgraduate degree __Modern business applications Java/Jakarta EE__ at __Lodz University of Technology__.
+👉 The Fault Management System is my first business application in the Java programming language, summarizing the knowledge I gained in the postgraduate degree __Modern business applications Java/Jakarta EE__ at __Lodz University of Technology__.
 
 👉 This application was created with using [__Apache Maven__](https://maven.apache.org/) and [__Java EE__](https://www.oracle.com/java/technologies/java-ee-glance.html) technology with many different standards, such as __JPA__, __JTA__, __EJB__, __CDI__, __JSF__ etc. It also uses the advanced tools, such as [__Oracle Database XE__](https://www.oracle.com/pl/database/technologies/appdev/xe.html) and [__Payara Server__](https://www.payara.fish/downloads/payara-platform-community-edition/).
