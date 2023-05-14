@@ -31,9 +31,9 @@
 ### Requirements
 
 1. Log into __Windows 11 Pro__ with a user that is a direct member of the Administrators group.
-2. Download __Java 17.0.6 LTS__ and install to a local directory.
-3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory.
-4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. 
+2. Download the __Java 17.0.6 LTS__ and install to a local directory.
+3. Download the __Apache Maven 3.8.6__ and extract zip file to a local directory.
+4. Download the __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. 
 
     > #### IMPORTANT
     > 
@@ -56,12 +56,12 @@
         public class DataSource {
         }
 
-6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
-7. In command line Windows, copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ to __Payara Server 5.2021.10__:
+6. Download the __Payara Server 5.2021.10__ and extract zip file to a local directory.
+7. In command line Windows, copy __ojdbc11.jar__ file from the __Oracle Database 21c Express Edition__ to the __Payara Server 5.2021.10__:
 
        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
 
-7. Verify if __Oracle Database 21c Express Edition__ runs.
+7. Verify if the __Oracle Database 21c Express Edition__ runs.
 8. In command line Windows, start default domain __domain1__ on the __Payara Server 5.2021.10__ using __asadmin__ utility and __start-domain__ subcommand:
 
         %PAYARA_HOME%\bin\asadmin start-domain
@@ -80,11 +80,11 @@
 
         mvn clean install
 
-13. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on __Payara Server 5.2021.10__.
+13. In command line Windows, move to __D:\fms\target__ folder and deploy __FMS-1.0.war__ file on the __Payara Server 5.2021.10__.
 
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
-14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
+14. In the __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
 15. In your Web browser,
     * paste a URL:
 
