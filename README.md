@@ -50,8 +50,8 @@
                 name = "java:app/jdbc/FMSDescriptorDS",
                 className = "oracle.jdbc.OracleDriver",
                 url = "jdbc:oracle:thin:@localhost:1521:XE",
-                user = "system",
-                password = "27aB.#cd75",
+                user = "<USER>",
+                password = "<PASSWORD>",
                 isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
         public class DataSource {}
 
