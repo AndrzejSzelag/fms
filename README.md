@@ -103,7 +103,7 @@
 
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
-14. In the __Oracle Database 21c Express Edition__ execute file __data.sql__ from folder __D:\fms\src\main\resources__.
+14. Execute script __data.sql__ from folder __D:\fms\src\main\resources__ to load test data.
 15. In your Web browser,
     * paste a URL:
 
