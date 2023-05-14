@@ -37,7 +37,7 @@
 
     > #### IMPORTANT
     > 
-    > After installation the __Oracle Database 21c Express Edition__, create a database schema, __database user__ and __database password__ - you will need this data in __DataSource.java__:
+    > After installation the __Oracle Database 21c Express Edition__, create a new __database user__ and __database password__ - you will need this data in __DataSource.java__:
      
         package pl.szelag.config;
     
