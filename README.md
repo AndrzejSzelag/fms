@@ -80,12 +80,8 @@
 
         mvn clean install
         
-12. Move to folder __D:\fms\src\main\resources__ and change extract zip file to a local directory and run __setup.exe__. 
+12. In the folder __D:\fms\src\main\resources__ find file __DataSource.java and fill user = "<USER>" and password = "<PASSWORD>" the real data:
 
-    > #### IMPORTANT
-    > 
-    > In the folder __D:\fms\src\main\resources__ find file __DataSource.java and fill user = "<USER>" and password = "<PASSWORD>" the real data:
-     
         package pl.szelag.config;
     
         import javax.annotation.sql.DataSourceDefinition;
