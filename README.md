@@ -80,7 +80,7 @@
 
         mvn clean install
         
-12. In the folder __D:\fms\src\main\resources__ find file __DataSource.java__ and fill user = "<USER>" and password = "<PASSWORD>" the real data:
+12. In the folder __D:\fms\src\main\resources__ find file __DataSource.java__ and fill fields __user = ""__ and __password = ""__ the real data:
 
         package pl.szelag.config;
     
