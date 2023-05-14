@@ -37,7 +37,7 @@
 
     > #### IMPORTANT
     > 
-    > After installation create a new schema, user account and user password - you will need this data in __DataSource.java__:
+    > After installation create a user and password - you will need this data in __DataSource.java__:
      
         package pl.szelag.config;
     
