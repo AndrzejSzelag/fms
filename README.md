@@ -84,7 +84,9 @@
         %PAYARA_HOME%\bin\asadmin deploy FMS-1.0.war
 
 14. In __Oracle Database 21c Express Edition__ execute __data.sql__ file from __D:\fms\src\main\resources__ folder.
-15. In your Web browser use:
+15. In your Web browser
+
+    * copy and paste URL:
 
             https://localhost:8181/FMS
             
