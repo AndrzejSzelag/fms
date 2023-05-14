@@ -96,7 +96,7 @@
 
 > #### IMPORTANT
 > 
-> Test users: 
+> Logins for test users: 
 > * __AndrzejSzelag__ (administrator)
 > * __TomaszDominiak__ (supervision)
 > * __ArekStolecki__ (electrician)
