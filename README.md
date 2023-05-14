@@ -31,9 +31,9 @@
 ### Requirements
 
 1. Log into __Windows 11 Pro__ with a user that is a direct member of the Administrators group.
-2. Download __Java 17.0.6 LTS__ and install to a local directory (e.g. __C:\Politechnika\jdk-17__).
-3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory (e.g. __C:\Politechnika\apache-maven-3.8.6__).
-4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory (e.g. __C:\app\Andrzej\product\21c__) and run __setup.exe__. 
+2. Download __Java 17.0.6 LTS__ and install to a local directory.
+3. Download __Apache Maven 3.8.6__ and extract zip file to a local directory.
+4. Download __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. 
 
     > #### IMPORTANT
     > 
@@ -55,7 +55,7 @@
                 isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
         public class DataSource {}
 
-6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory  (e.g. __C:\Politechnika\payara__).
+6. Download __Payara Server 5.2021.10__ and extract zip file to a local directory.
 7. In command line Windows, copy __ojdbc11.jar__ file from __Oracle Database 21c Express Edition__ to __Payara Server 5.2021.10__:
 
        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
