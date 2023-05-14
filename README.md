@@ -12,7 +12,7 @@
 * 🔶 JavaServer Faces 2.3
 * 🔶 Lombok 1.18.26
 * 🔶 BootsFaces 1.5.0
-* 🔶 PrimeFaces 10.0.0
+* 🔶 PrimeFaces 10.0.0 (icons)
 
 
 ### Environment
