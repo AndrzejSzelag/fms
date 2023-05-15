@@ -31,7 +31,7 @@
 ### Requirements
 
 1. Log into __Windows 11 Pro__ with a user that is a direct member of the Administrators group.
-2. Download the __Java 17.0.6 LTS__ and install to a local directory.
+2. Download the __Java 17.0.6 LTS__ (_x64 MSI Installer_) and install to a local directory.
 3. Download the __Apache Maven 3.8.6__ and extract zip file to a local directory.
 4. Download the __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. After installation:
     * verify if __Oracle Database 21c Express Edition__ runs,
