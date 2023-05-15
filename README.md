@@ -85,7 +85,7 @@
 
 13. Load test data from the script __D:\fms\src\main\resources\data.sql__ to the __Oracle Database 21c Express Edition__ with using one of bellow tools:
       * __Oracle SQL Developer__ 
-      * __SQL Plus__.
+      * __SQL Plus__
 
 14. In your Web browser,
     * paste a URL:
