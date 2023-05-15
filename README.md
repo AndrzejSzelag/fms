@@ -38,6 +38,7 @@
     * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__ before starting to use the __FMS__ application:
 
    
+            // DataSource.java 
             package pl.szelag.config;
     
             import javax.annotation.sql.DataSourceDefinition;
