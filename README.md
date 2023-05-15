@@ -25,7 +25,7 @@
 
 ### Video
 
-🚀 Coming Soon
+🚀 [Management of user accounts by the Administrator](https://youtu.be/eArxW2pi3XQ)
 
 
 ### Requirements
