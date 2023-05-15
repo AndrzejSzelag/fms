@@ -35,7 +35,7 @@
 3. Download the __Apache Maven 3.8.6__ and extract zip file to a local directory.
 4. Download the __Oracle Database 21c Express Edition__, extract zip file to a local directory and run __setup.exe__. After installation:
     * verify if __Oracle Database 21c Express Edition__ runs,
-    * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__:
+    * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__ before starting to use the __FMS__ application:
 
    
             package pl.szelag.config;
