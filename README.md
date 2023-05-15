@@ -102,7 +102,8 @@ __Logins__ for test users:
    * __AndrzejSzelag__ (administrator)
    * __TomaszDominiak__ (supervision)
    * __ArekStolecki__ (electrician)
- Default password for all test users: __12345678__
+ 
+ Default __password__ for all test users: __12345678__
 
 
 
