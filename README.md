@@ -96,13 +96,13 @@
 
 #### You should see the home page of the FMS application (hint: first photo) and log in with using the following data.
 
-__Logins__ for confirmed and activated test users: 
-
-   * __AndrzejSzelag__ (administrator)
-   * __TomaszDominiak__ (supervision)
-   * __ArekStolecki__ (electrician)
- 
- Default __password__ for all test users: __12345678__
+> __Logins__ for confirmed and activated test users: 
+> 
+>   * __AndrzejSzelag__ (administrator)
+>   * __TomaszDominiak__ (supervision)
+>   * __ArekStolecki__ (electrician)
+> 
+> Default __password__ for all test users: __12345678__
 
 
 
