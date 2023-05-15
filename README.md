@@ -99,9 +99,9 @@
 #### You should see the home page of the FMS application (hint: first photo) and log in with using the following data.
 
 __Logins__ for test users: 
-   * __AndrzejSzelag__ (administrator)
-   * __TomaszDominiak__ (supervision)
-   * __ArekStolecki__ (electrician)
+      * __AndrzejSzelag__ (administrator)
+      * __TomaszDominiak__ (supervision)
+      * __ArekStolecki__ (electrician)
  
 Default password for all test users: __12345678__
 
