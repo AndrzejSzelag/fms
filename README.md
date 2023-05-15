@@ -94,7 +94,7 @@
     * click on __Continue to localhost (unsafe)__
 
 
-#### You should see the home page of the FMS application (hint: first photo) and log in with using the following data.
+#### You should see the home page of the FMS application (hint: first photo) and log in with using the following logins and password.
 
 > __Logins__ for confirmed and activated test users: 
 > 
