@@ -7,6 +7,6 @@ target/
 *.ipr
 
 ### NetBeans ###
-nbproject/private/
+nbproject/
 nbactions.xml
 nb-configuration.xml
