@@ -92,7 +92,7 @@
     * click on __Continue to localhost (unsafe)__
 
 
-#### You should see the main page of application (tip: first photo)__ and log in to the FMS application.
+#### You should see the home page of the FMS application (hint: first photo) and log in with using the following data.
 
 > Logins for test users: 
 > * __AndrzejSzelag__ (administrator)
