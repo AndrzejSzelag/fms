@@ -119,7 +119,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -241,7 +240,6 @@
             </plugin>            
         </plugins>
     </build>
-
     <reporting>
         <plugins>    
             <plugin>
@@ -288,5 +286,4 @@
             </plugin>
         </plugins>
     </reporting>
-
 </project>
