@@ -25,7 +25,8 @@
 
 ### Video
 
-🚀 [Management of user accounts by the Administrator](https://youtu.be/eArxW2pi3XQ)
+🚀 [Management of user accounts by Administrator](https://youtu.be/eArxW2pi3XQ)
+🚀 [Fault management by Supervision and Electrician](https://youtu.be/tnAVQGW4tXk)
 
 
 ### Requirements
