@@ -35,7 +35,7 @@
 1. Log into __Windows 11 Pro__ with a user that is a direct member of the Administrators group.
 2. Download the __Java 17.0.6 LTS__ (_x64 MSI Installer_) and install to a local directory.
 3. Download the __Apache Maven 3.8.6__ (_Binary zip archive_) and extract zip file to a local directory.
-4. Download the __Oracle Database 21c Express Edition__ (_OracleXE213_Win64.zip_), extract zip file to a local directory and run __setup.exe__. After installation:
+4. Download the __Oracle Database 21c Express Edition__ (_.zip_), extract zip file to a local directory and run __setup.exe__. After installation:
     * verify if __Oracle Database 21c Express Edition__ runs,
     * create a new __database user__ (e.g. __system__) and __database password__ (e.g. __pa$$w0rd__) - you will need this data in __DataSource.java__ before starting to use the __FMS__ application:
 
@@ -58,7 +58,7 @@
             public class DataSource {
             }
 
-6. Download the __Payara Server 5.2021.10__ and extract zip file to a local directory.
+6. Download the __Payara Server 5.2021.10__ (_.zip_) and extract zip file to a local directory.
 7. In command line Windows, copy file __ojdbc11.jar__ from the __Oracle Database 21c Express Edition__ to the __Payara Server 5.2021.10__:
 
        copy %ORACLE_HOME%\jdbc\lib\ojdbc11.jar %PAYARA_HOME%\glassfish\domains\domain1\lib
