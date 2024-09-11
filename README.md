@@ -1,7 +1,7 @@
 # FMS (Fault Management System)
 ### IT System for Managing Control System Faults on the Mining Railways
 
-Inside this project you find: __Facade Design Pattern__
+🔶 🔶 🔶 Inside this project you find: __Facade Design Pattern__ 🔶 🔶 🔶 
 
 ![url3.java](url3.png "Fault Management System")
 
