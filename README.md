@@ -1,8 +1,8 @@
 # FMS (Fault Management System)
 
 [<img alt="Java EE" src="https://img.shields.io/badge/Java EE-8.0.1-007396.svg?logo=java">](https://www.oracle.com/java/technologies/java-ee-glance.html)
-[<img alt="Lombok" src="https://img.shields.io/badge/Lombok-1.18.26-DA525D.svg?logo=java">](https://projectlombok.org/)
 [<img alt="Maven" src="https://img.shields.io/badge/Maven-3.8.6-C71A36.svg?logo=apachemaven">](https://maven.apache.org/)
+[<img alt="Lombok" src="https://img.shields.io/badge/Lombok-1.18.26-DA525D.svg?logo=java">](https://projectlombok.org/)
 [<img alt="Payara Server" src="https://img.shields.io/badge/Payara Server-5.2021.10-FF7300.svg?logo=payara">](https://www.payara.fish/)
 [<img alt="Boot Faces" src="https://img.shields.io/badge/Boot Faces-1.5.0-7952B3.svg?logo=bootstrap">](https://www.bootsfaces.net/index.jsf)
 
