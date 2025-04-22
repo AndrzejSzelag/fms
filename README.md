@@ -1,5 +1,6 @@
 # FMS (Fault Management System)
 
+[<img alt="Maven" src="https://img.shields.io/badge/Maven-3.9.6-C71A36.svg?logo=apachemaven">](https://maven.apache.org/)
 [<img alt="Payara Server" src="https://img.shields.io/badge/Payara Server-5.2021.10-FF7300.svg?logo=payara">](https://www.payara.fish/)
 [<img alt="Lombok" src="https://img.shields.io/badge/Lombok-1.18.26-DA525D.svg?logo=java">](https://projectlombok.org/)
 
