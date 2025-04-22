@@ -113,11 +113,3 @@
 >   * __ArekStolecki__ (electrician)
 > 
 > Default __password__ for all test users: __12345678__
-
-
-
-### Description
-
-👉 The Fault Management System (FMS) is my first business application in Java programming language, summarizing the knowledge I gained in the postgraduate degree __Modern business applications Java/Jakarta EE__ at __Lodz University of Technology__.
-
-👉 This application was created with using [__Apache Maven__](https://maven.apache.org/) and [__Java EE__](https://www.oracle.com/java/technologies/java-ee-glance.html) technology with many different standards, such as __JPA__, __JTA__, __EJB__, __CDI__, __JSF__ etc. It also uses the advanced tools, such as [__Oracle Database XE__](https://www.oracle.com/pl/database/technologies/appdev/xe.html) and [__Payara Server__](https://www.payara.fish/downloads/payara-platform-community-edition/).
