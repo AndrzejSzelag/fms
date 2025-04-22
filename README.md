@@ -1,7 +1,6 @@
 # FMS (Fault Management System)
-### IT System for Managing Control System Faults on the Mining Railways
 
-🔶🔶🔶 Inside this project you find: __Facade Design Pattern__ 🔶🔶🔶 
+**Fault Management System** is an enterprise-grade **MVC (Model View Controller)** application designed for managing faults in railway traffic control systems within a mining environment. The system adopts the **Facade Design Pattern** to simplify access to complex operations and improve maintainability. Built using **Java Enterprise Edition** technologies, it leverages **JPA (Java Persistence API)** for data persistence, **JTA (Java Transaction API)** for transaction management, and **EJBs (Enterprise JavaBeans)** to handle business logic. The application runs on the **Payara Server** and integrates with an **Oracle Database**. The project is built with **Apache Maven** and makes use of **Lombok**  java library to reduce boilerplate code.
 
 ![url3.java](url3.png "Fault Management System")
 
