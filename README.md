@@ -5,7 +5,7 @@
 [<img alt="Oracle Database" src="https://img.shields.io/badge/Oracle Database-21c Express Edition-F80000.svg?logo=oracle"/>](https://www.oracle.com/database/technologies/xe-downloads.html)
 [<img alt="Payara Server" src="https://img.shields.io/badge/Payara Server-5.2021.10-FF7300.svg?logo=payara">](https://www.payara.fish/)
 [<img alt="Boot Faces" src="https://img.shields.io/badge/Boot Faces-1.5.0-7952B3.svg?logo=bootstrap">](https://www.bootsfaces.net/index.jsf)
-[<img alt="Lombok" src="https://img.shields.io/badge/Lombok-1.18.26-DA525D.svg?logo=java">](https://projectlombok.org/)
+[<img alt="Lombok" src="https://img.shields.io/badge/Lombok-1.18.26-DA525D.svg?logo=lombok">](https://projectlombok.org/)
 
 **Fault Management System** is an enterprise-grade application designed for managing faults in railway traffic control systems within a mining environment. The system is built using the **MVC (Model View Controller)** architectural pattern, which organises code by separating it into three interconnected components. The system utilises the structural design pattern **Facade** that simplifies access to complex operations and improves maintainability by providing a unified interface to a set of interfaces in a subsystem. Built using **Java Enterprise Edition** technologies, it leverages **JPA (Java Persistence API)** for data persistence, **JTA (Java Transaction API)** for transaction management, and **EJBs (Enterprise JavaBeans)** to handle business logic. The application runs on the **Payara Server** and integrates with an **Oracle Database**. The project is built with **Apache Maven** and makes use of the **Lombok** Java library to reduce boilerplate code.
 
