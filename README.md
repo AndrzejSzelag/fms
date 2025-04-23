@@ -1,6 +1,6 @@
 # FMS (Fault Management System)
 
-[<img alt="Java EE" src="https://img.shields.io/badge/Java EE-8.0.1-007396.svg?logo=java">](https://www.oracle.com/java/technologies/java-ee-glance.html)
+[<img alt="Java EE" src="https://img.shields.io/badge/Java EE-8.0.1-007396.svg?logo=javaee">](https://www.oracle.com/java/technologies/java-ee-glance.html)
 [<img alt="Maven" src="https://img.shields.io/badge/Maven-3.8.6-C71A36.svg?logo=apachemaven">](https://maven.apache.org/)
 [<img alt="Oracle Database" src="https://img.shields.io/badge/Oracle Database-21c Express Edition-F80000.svg?logo=oracle"/>](https://www.oracle.com/database/technologies/xe-downloads.html)
 [<img alt="Payara Server" src="https://img.shields.io/badge/Payara Server-5.2021.10-FF7300.svg?logo=payara">](https://www.payara.fish/)
